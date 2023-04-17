@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1500px) {
+
+    /* navbar */
+    .normal_nav_link{
+        font-size: 15px;
+    }
+    /* navbar */
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    /* navbar */
+    .products_bar{
+        column-gap: 30px;
+    }
+    .product_box_heading{
+        font-size: 18px;
+    }
+    .product_box_link a {
+        color: white;
+        text-decoration: none;
+        margin: 0 0 10px 0;
+        font-size: 13px;
+    }
+    /* navbar */
+
+}
+
+
+/* Mobile and tab */
+@media only screen and (max-width: 1000px) {
+    .nav_bar_container{
+        height: 80px;
+    }
+    .website_links{
+        display: none;
+    }
+
+    .products_bar_container{
+        display: none;
+    }
+
+    .side_bar_links{
+        display: block;
+    }
+
+    .company_logo img{
+        width: 150px;
+    }
+
+}
+
+/* Mobile and tab */

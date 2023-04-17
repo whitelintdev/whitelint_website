@@ -5,10 +5,240 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitelint</title>
+
+    <link rel="stylesheet" href="./cssStyling/index.css">
+
+    <link rel="stylesheet" href="./cssStyling/navigation/nav.css">
+    <link rel="stylesheet" href="./cssStyling/navigation/media_query_nav.css">
+
+    <title>Whitelint - Home</title>
 </head>
 
 <body>
+
+    <main>
+
+        <!-- navigation code -->
+        <div class="nav_bar_container" id="nav_bar_container">
+
+            <div class="company_logo">
+                <a href="#">
+                    <img src="https://i.postimg.cc/66nqGKPF/Whitelint-Logo.png" alt="Whitelint Company logo">
+                </a>
+            </div>
+
+            <div class="website_links">
+
+                <div class="home_link">
+                    <a href="#">
+                        <span class="normal_nav_link nav_link_active">Home</span>
+                    </a>
+                </div>
+
+                <div class="product_services_link" onclick="open_product_Service_bar()">
+
+                    <span class="normal_nav_link">Products & Services</span>
+                    <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 1L7 7L1 1" stroke="white" stroke-width="2" />
+                    </svg>
+
+                </div>
+
+                <div class="blog_link">
+                    <a href="#">
+                        <span class="normal_nav_link">Blogs</span>
+                    </a>
+                </div>
+
+                <div class="about_link">
+                    <a href="#">
+                        <span class="normal_nav_link">About us</span>
+                    </a>
+                </div>
+
+                <div class="contact_us_link">
+                    <a href="#">
+                        <span class="normal_nav_link">Contact Us</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="side_bar_links">
+
+                <button onclick="open_close_side_bar('open')">
+                    <svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7H19M1 1H19M1 13H19" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="side_bar_content_wrapper" id="side_bar_content_wrapper">
+
+                    <div class="empty" onclick="open_close_side_bar('close')"></div>
+
+                    <div class="side_bar_content_container">
+
+                        <div class="close_button">
+
+                            <button onclick="open_close_side_bar('close')">
+                                <svg width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_224_50436)">
+                                        <path
+                                            d="M3.81055 3.49951L6.16895 5.86133L5.86133 6.16895L3.49951 3.81055L1.1377 6.16895L0.830078 5.86133L3.18848 3.49951L0.830078 1.1377L1.1377 0.830078L3.49951 3.18848L5.86133 0.830078L6.16895 1.1377L3.81055 3.49951Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_224_50436">
+                                            <rect width="7" height="7" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="side_bar_links">
+
+                            <div class="home">
+                                <a href="#">
+                                    <span>Home</span>
+                                </a>
+                            </div>
+                            <div class="product_Service">
+
+                                <span></span>
+
+                                <div class="product_Service_inner">
+                                    <a href="#">Security Products and Tools</a>
+                                    <a href="#">Investigation Solutions & Forensic Services</a>
+                                    <a href="#">Research and Development Services</a>
+                                    <a href="#">Research and Development Services</a>
+                                    <a href="#">WAFER Registration Portal</a>
+                                </div>
+
+                            </div>
+                            <div class="about_us">
+                                <a href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="blogs">
+                                <a href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="contact_us">
+                                <a href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="privacy_Plocy">
+                                <a href="#">
+                                    <span></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="products_bar_container" id="products_bar_container">
+
+                <div class="products_bar">
+
+                    <!-- Security products -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">Security Products</a></div>
+
+                        <div class="product_box_link">
+                            <a href="#">WAFER Chip 1.0</a>
+                            <a href="#">WAFER Nova 2.1</a>
+                            <a href="#">WAFER Nova 2.2.x</a>
+                            <a href="#">WAFER Supernova 3.0</a>
+                        </div>
+
+                    </div>
+                    <!-- Security products -->
+
+                    <!-- Investigation -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">Investigation Solutions & Forensic Services</a>
+                        </div>
+
+                        <div class="product_box_link">
+                            <a href="#">Creep</a>
+                            <a href="#">Track</a>
+                            <a href="#">Darkhound</a>
+                            <a href="#">IPDR Analyzer</a>
+                        </div>
+
+                    </div>
+                    <!-- Investigation -->
+
+                    <!-- A.R.T Services -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">A.R.T Services for University Collaboration</a>
+                        </div>
+
+                        <div class="product_box_link">
+                            <a href="#">Download Brochure</a>
+                        </div>
+
+                    </div>
+                    <!-- A.R.T Services -->
+
+                    <!-- Research & Development -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">Research & Development Services</a></div>
+                        <div class="product_box_link">
+                            <a href="#">Download WAFER Web-Resources</a>
+                        </div>
+
+                    </div>
+                    <!-- Research & Development -->
+
+                    <!--WAFER Registration Portal -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">WAFER Registration Portal</a></div>
+                        <div class="product_box_link">
+                            <a href="#">Registration Form</a>
+                            <a href="#">Download WAFER Web-Resources</a>
+                        </div>
+
+                    </div>
+                    <!--WAFER Registration Portal -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- navigation code -->
+
+        <!-- home content -->
+        <!-- home content -->
+
+        <!-- footer code -->
+        <footer>
+
+        </footer>
+        <!-- footer code -->
+
+    </main>
+
+    <script src="./jsWorkings/index.js"></script>
 
 </body>
 
