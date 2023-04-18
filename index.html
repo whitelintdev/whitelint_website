@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./cssStyling/navigation/nav.css">
     <link rel="stylesheet" href="./cssStyling/navigation/media_query_nav.css">
 
+    <link rel="stylesheet" href="./cssStyling/Home/home.css">
+    <link rel="stylesheet" href="./cssStyling/Home/media_query_home.css">
+
     <title>Whitelint - Home</title>
 </head>
 
@@ -77,29 +80,29 @@
 
                     <div class="empty" onclick="open_close_side_bar('close')"></div>
 
-                    <div class="side_bar_content_container">
+                    <div class="side_bar_content_container" id="side_bar_content_container">
 
-                        <div class="close_button">
+                        <div class="side_bar_links_container" id="side_bar_links_container">
 
-                            <button onclick="open_close_side_bar('close')">
-                                <svg width="7" height="7" viewBox="0 0 7 7" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_224_50436)">
-                                        <path
-                                            d="M3.81055 3.49951L6.16895 5.86133L5.86133 6.16895L3.49951 3.81055L1.1377 6.16895L0.830078 5.86133L3.18848 3.49951L0.830078 1.1377L1.1377 0.830078L3.49951 3.18848L5.86133 0.830078L6.16895 1.1377L3.81055 3.49951Z"
-                                            fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_224_50436">
-                                            <rect width="7" height="7" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
+                            <div class="close_button">
 
-                        </div>
+                                <button onclick="open_close_side_bar('close')">
+                                    <svg width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_224_50436)">
+                                            <path
+                                                d="M3.81055 3.49951L6.16895 5.86133L5.86133 6.16895L3.49951 3.81055L1.1377 6.16895L0.830078 5.86133L3.18848 3.49951L0.830078 1.1377L1.1377 0.830078L3.49951 3.18848L5.86133 0.830078L6.16895 1.1377L3.81055 3.49951Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_224_50436">
+                                                <rect width="7" height="7" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
 
-                        <div class="side_bar_links">
+                            </div>
 
                             <div class="home">
                                 <a href="#">
@@ -108,37 +111,46 @@
                             </div>
                             <div class="product_Service">
 
-                                <span></span>
+                                <span onclick="open_product_inner_section()">
+                                    Product & Services
+                                    <svg viewBox="0 0 5 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.16125 0.505859L2.5 1.84169L3.83875 0.505859L4.25 0.917109L2.5 2.66711L0.75 0.917109L1.16125 0.505859Z"
+                                            fill="white" />
+                                    </svg>
 
-                                <div class="product_Service_inner">
-                                    <a href="#">Security Products and Tools</a>
-                                    <a href="#">Investigation Solutions & Forensic Services</a>
-                                    <a href="#">Research and Development Services</a>
-                                    <a href="#">Research and Development Services</a>
-                                    <a href="#">WAFER Registration Portal</a>
+                                </span>
+
+                                <div class="product_Service_inner" id="product_Service_inner">
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Security Products and Tools</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Investigation Solutions & Forensic Services</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Research and Development Services</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Research and Development Services</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;WAFER Registration Portal</a>
                                 </div>
 
                             </div>
                             <div class="about_us">
                                 <a href="#">
-                                    <span></span>
+                                    <span>About Us</span>
                                 </a>
                             </div>
                             <div class="blogs">
                                 <a href="#">
-                                    <span></span>
+                                    <span>Blogs</span>
                                 </a>
                             </div>
                             <div class="contact_us">
                                 <a href="#">
-                                    <span></span>
+                                    <span>Contact Us</span>
                                 </a>
                             </div>
                             <div class="privacy_Plocy">
                                 <a href="#">
-                                    <span></span>
+                                    <span>Privacy Policy</span>
                                 </a>
                             </div>
+
 
                         </div>
 
@@ -224,10 +236,44 @@
             </div>
 
         </div>
-
         <!-- navigation code -->
 
         <!-- home content -->
+        <!-- <img src="https://i.postimg.cc/J7bVZLxt/Home-Banner.webp" alt="Home_banner Image"> -->
+
+        <div class="home_container">
+
+            <div class="home_hero_image_container">
+
+                <div class="home_hero_image_content">
+
+                    <div class="home_hero_image_heading">
+                        <span class="we_deliver_text">We Deliver</span>
+                        <span class="Unique_Solutions_text">Unique Solutions</span>
+                    </div>
+                    <div class="home_hero_image_para">
+                        WhiteLint Global is an Indo-American startup focused on providing
+                        Training, Consultancy, and Solutions in Network Security and Digital Forensics to various
+                        agencies. The company is currently headquartered in New Delhi and provides services to offices,
+                        investigation agencies, law firms, government outfits, etc.
+                    </div>
+                    <div class="home_hero_image_button">
+                        <a href="#">View Products</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="what_is_wafer_container">
+
+            </div>
+
+            <div class="products_services_container"></div>
+
+            <div class="video_container"></div>
+
+        </div>
         <!-- home content -->
 
         <!-- footer code -->

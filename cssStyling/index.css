@@ -7,6 +7,10 @@
     font-family: inter;
     src: url(./font/Inter-Regular.ttf);
 }
+@font-face {
+    font-family: nunito_light;
+    src: url(./font/NunitoSans-Light.ttf);
+}
 /* :root {
     
 } */
