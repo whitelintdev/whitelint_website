@@ -11,7 +11,11 @@
 
 
 
-
+.company_logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .website_links{
@@ -150,10 +154,13 @@
     background-color: transparent;
     padding: 10px;
     border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .side_bar_links button svg{
     width: 30px;
-    height: 30px;
 }
 
 
