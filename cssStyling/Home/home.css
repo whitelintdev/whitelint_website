@@ -43,6 +43,10 @@
     margin: 60px 0 80px 0;
     font-size: 20px;
     text-align: center;
+    font-style: normal;
+}
+.home_hero_image_para b{
+    letter-spacing: 2px;
 }
 
 
@@ -62,3 +66,212 @@
 .home_hero_image_button a:hover{
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+.what_is_wafer_container{
+    width: 100%;
+    padding: 100px;
+    background-color: #05172B;
+    color: white;
+    background-image: url('../../Images/what_why_wafer.png');
+    mix-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.what_is_wafer_content{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.security_for_everyone{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #FF4801;
+    text-transform: uppercase;
+}
+
+
+.what_is_wafer_heading{
+    margin: 40px 0 20px 0;
+    font-size: 45px;
+}
+
+.what_is_wafer_para{
+    font-size: 20px;
+}
+
+.what_is_wafer_button{
+    width: 100%;
+    margin: 60px 0 0 0;
+}
+.what_is_wafer_button a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding:7px 20px;
+    border-radius: 2px;
+    background-image: linear-gradient(to left, #FF4801 , #FE9531);
+    box-shadow: 0px 2px 8px rgba(255, 81, 7, 0.5);
+}
+.what_is_wafer_button a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products_services_container{
+    width: 100%;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    background-color: #05172B;
+}
+.products_services_content{
+    display: flex;
+}
+
+.products_services_content a{
+    color: white;
+    text-decoration: none;
+}
+.products_services_content a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.product_link{
+    width: 550px;
+    max-width: 100%;
+    padding: 40px 50px;
+    border-radius: 5px;
+    margin: 0 ;
+    position: relative;
+    background: linear-gradient(297.05deg, #001A2E 1.24%, #1565C0 101.24%);
+}
+
+.product_link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 60px solid #05172B;;
+    border-left: 60px solid transparent;
+    width: 0;
+}
+
+.product_link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 60px solid transparent;
+    border-left: 60px solid #05172B;
+    width: 0;
+}
+
+
+.product_design_element{
+    position: absolute;
+    top: 0;
+    right: -25px;
+
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.product_design_element svg{
+    width: 30px;
+}
+
+.product_service_heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_service_heading span{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.product_service_heading svg{
+    width: 80px;
+}
+
+.product_service_para{
+    font-size: 20px;
+
+    padding: 40px 0 30px 0;
+}
+
+.product_service_button{
+    color: #00A5FF;
+    font-size: 25px;
+}
+
+
+
+
+
+.Services_link{
+    width: 550px;
+    max-width: 100%;
+    padding: 40px 50px;
+    border-radius: 2px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+  
+    border-image-source: linear-gradient(to right, rgb(127, 50, 236,0.1) 10%,#015496 100%);
+}
+
+
+
+.Product_section_design_element{
+    position: absolute;
+    width: max-content;
+    top: 0;
+    right: 0;
+}
+.Product_section_design_element svg{
+    width: 100px;
+    margin: 100px;
+}
+

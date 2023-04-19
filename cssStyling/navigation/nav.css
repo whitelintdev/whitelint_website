@@ -206,10 +206,14 @@
 
 
 
-.close_button{
+.side_bar_close_button{
     width: 100%;
     text-align: right;
+    display: flex;
+    justify-content: right;
 }
+
+
 
 .side_bar_links_container{
     width: 400px;
