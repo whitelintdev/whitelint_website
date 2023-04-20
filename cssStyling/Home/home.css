@@ -1,6 +1,7 @@
 .home_hero_image_container{
     width: 100%;
-    height: calc(100vh - 100px) ;
+    /* height: calc(100vh - 100px) */
+    height:100vh;
 
     background-image: linear-gradient(180deg, rgba(121, 118, 118, 0) 3.01%, rgba(0, 0, 0, 0.86) 80.37%),radial-gradient(35.32% 56.02% at 53.84% 58.56%, rgb(0, 26, 46,0.8), rgba(0, 26, 46, 0.1)),url('https://i.postimg.cc/653hHMBn/Whitelint-Logo.jpg');
     background-repeat: no-repeat;
@@ -15,7 +16,6 @@
 .home_hero_image_content{
     width: 600px;
     max-width: 100%;
-    padding: 0 20px 50px 20px;
     color: white;
 }
 
@@ -82,7 +82,7 @@
     padding: 100px;
     background-color: #05172B;
     color: white;
-    background-image: url('../../Images/what_why_wafer.png');
+    background-image: url('https://i.postimg.cc/C5799drz/what-why-wafer.png');
     mix-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: contain;
@@ -175,7 +175,6 @@
 
 
 
-
 .product_link{
     width: 550px;
     max-width: 100%;
@@ -207,6 +206,7 @@
 }
 
 
+
 .product_design_element{
     position: absolute;
     top: 0;
@@ -219,6 +219,8 @@
 .product_design_element svg{
     width: 30px;
 }
+
+
 
 .product_service_heading{
     width: 100%;
@@ -248,8 +250,6 @@
 
 
 
-
-
 .Services_link{
     width: 550px;
     max-width: 100%;
@@ -263,7 +263,6 @@
 }
 
 
-
 .Product_section_design_element{
     position: absolute;
     width: max-content;
@@ -275,3 +274,35 @@
     margin: 100px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video_carousal_container{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #00264F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos_box_wrapper{
+    width: 1200px;
+    height: 100px;
+    max-width: 100%;
+    margin: 30px;
+
+    background-color: red;
+}

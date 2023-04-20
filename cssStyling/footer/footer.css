@@ -4,7 +4,7 @@
 }
 footer{
     width: 100%;
-    padding: 100px 120px;
+    padding: 70px 120px 100px 120px;
     background-color: #05172B;
 }
 .footer_link_grid{
@@ -12,7 +12,7 @@ footer{
 
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     column-gap: 50px;
 }
 
@@ -27,7 +27,7 @@ footer{
 
 .footer_link_heading{
     font-size: 20px;
-    margin: 0 0 16px 0;
+    margin: 30px 0 16px 0;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -40,8 +40,52 @@ footer{
     color: white;
     text-decoration: none
 }
+
 .footer_links_container a:hover{
     color: white;
     text-decoration: none;
     opacity: 1;
+}
+
+
+
+
+
+
+.orange_line{
+    width: 100%;
+    height: 1px;
+    background-color: #FF4801;
+    margin: 30px 0;
+}
+
+
+
+.copy_right_socal_media{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy_right_socal_media span{
+    font-size: 20px;
+    color: #667085;
+}
+
+.social_media_icons_container{
+    width: max-content;
+    display: flex;
+}
+.social_media_icons_container a{
+    text-decoration: none;
+    margin: 0 0 0 30px;
+    opacity: 0.7;
+}
+.social_media_icons_container a:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+.social_media_icons_container a svg{
+    width: 30px;
 }

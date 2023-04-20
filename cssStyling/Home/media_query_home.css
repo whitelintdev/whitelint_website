@@ -30,7 +30,10 @@
 @media only screen and (max-width: 900px) {
 
     .what_is_wafer_container{
-        padding: 60px 80px;
+        padding: 60px 30px;
+    }
+    .what_is_wafer_content{
+        padding: 20px 0;
     }
 
 }

@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1000px){
+    footer{
+        padding: 50px 30px;
+    }
+}
+@media only screen and (max-width: 800px){
+    footer{
+        padding: 0px 30px 30px 30px;
+    }
+    
+    .copy_right_socal_media span{
+        font-size: 14px;
+    }
+    
+
+    .social_media_icons_container a{
+        margin: 0 0 0 10px;
+    }
+
+    .social_media_icons_container a svg{
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .footer_link_heading{
+        font-size: 15px;
+    }
+    
+    .footer_links_container a{
+        font-size: 12px;
+    }
+    .copy_right_socal_media{
+        flex-direction: column;
+    }
+    .social_media_icons_container{
+        margin: 20px 0 0 0;
+    }
+}

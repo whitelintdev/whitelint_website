@@ -6,7 +6,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+    transition: .3s all ease-in-out;
 }
 
 
@@ -62,6 +68,7 @@
 }
 .product_services_link span{
     margin: 0 10px 0 0;
+    cursor: pointer;
 }
 .product_services_link svg{
     width: 15px;
@@ -265,7 +272,27 @@
 }
 .product_Service_inner_open{
     height: 190px;
+    overflow: auto;
     transition: .3s all ease-in-out;
+    padding: 0 5px 0 0;
+}
+.product_Service_inner_open::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+.product_Service_inner_open::-webkit-scrollbar-track {
+    background: #05172B;;
+}
+
+/* Handle */
+.product_Service_inner_open::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Handle on hover */
+.product_Service_inner_open::-webkit-scrollbar-thumb {
+    background: #555;
 }
 .product_Service_inner a{
     width: 100%;

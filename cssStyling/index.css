@@ -21,7 +21,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #05172B;;
 }
 
 /* Handle */
@@ -47,3 +47,9 @@ main{
     max-width: 100%;
     margin: 0 auto;
 }
+
+.stop-scroll {
+    margin: 0 !important;
+    height: 100% !important;
+    overflow: hidden !important;
+  }
