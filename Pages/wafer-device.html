@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./cssStyling/index.css">
+    <link rel="stylesheet" href="../cssStyling/index.css">
 
-    <link rel="stylesheet" href="./cssStyling/navigation/nav.css">
-    <link rel="stylesheet" href="./cssStyling/navigation/media_query_nav.css">
+    <link rel="stylesheet" href="../cssStyling/navigation/nav.css">
+    <link rel="stylesheet" href="../cssStyling/navigation/media_query_nav.css">
 
-    <link rel="stylesheet" href="./cssStyling/Home/home.css">
-    <link rel="stylesheet" href="./cssStyling/Home/media_query_home.css">
+    <link rel="stylesheet" href="../cssStyling/footer/footer.css">
+    <link rel="stylesheet" href="../cssStyling/footer/media_query_footer.css">
 
-    <link rel="stylesheet" href="./cssStyling/footer/footer.css">
-    <link rel="stylesheet" href="./cssStyling/footer/media_query_footer.css">
+    <link rel="stylesheet" href="../cssStyling/product/product.css">
+    <link rel="stylesheet" href="../cssStyling/product/media_query_product.css">
 
-    <title>Whitelint - Home</title>
+    <title>Whitelint - Products & Services</title>
 </head>
 
 <body id="main_conatiner">
@@ -28,7 +28,7 @@
         <div class="nav_bar_container" id="nav_bar_container">
 
             <div class="company_logo">
-                <a href="./index.html">
+                <a href="../index.html">
                     <img src="https://i.postimg.cc/66nqGKPF/Whitelint-Logo.png" alt="Whitelint Company logo">
                 </a>
             </div>
@@ -36,14 +36,14 @@
             <div class="website_links">
 
                 <div class="home_link">
-                    <a href="./index.html">
-                        <span class="normal_nav_link nav_link_active">Home</span>
+                    <a href="../index.html">
+                        <span class="normal_nav_link">Home</span>
                     </a>
                 </div>
 
                 <div class="product_services_link" onclick="open_product_Service_bar()">
 
-                    <span class="normal_nav_link">Products & Services</span>
+                    <span class="normal_nav_link nav_link_active">Products & Services</span>
                     <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1L7 7L1 1" stroke="white" stroke-width="2" />
                     </svg>
@@ -124,8 +124,7 @@
                                 </span>
 
                                 <div class="product_Service_inner" id="product_Service_inner">
-                                    <a href="./Pages/security-products.html">&#x2022;&nbsp;&nbsp;Security Products and
-                                        Tools</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Security Products and Tools</a>
                                     <a href="#">&#x2022;&nbsp;&nbsp;Investigation Solutions & Forensic Services</a>
                                     <a href="#">&#x2022;&nbsp;&nbsp;Research and Development Services</a>
                                     <a href="#">&#x2022;&nbsp;&nbsp;A.R.T Services for University Collaboration</a>
@@ -154,7 +153,6 @@
                                 </a>
                             </div>
 
-
                         </div>
 
                     </div>
@@ -170,8 +168,7 @@
                     <!-- Security products -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="./Pages/security-products.html">Security Products</a>
-                        </div>
+                        <div class="product_box_heading"><a href="#">Security Products</a></div>
 
                         <div class="product_box_link">
                             <a href="#">WAFER Chip 1.0</a>
@@ -186,8 +183,7 @@
                     <!-- Investigation -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="./Pages/investigation.html">Investigation Solutions &
-                                Forensic Services</a>
+                        <div class="product_box_heading"><a href="#">Investigation Solutions & Forensic Services</a>
                         </div>
 
                         <div class="product_box_link">
@@ -203,12 +199,11 @@
                     <!-- A.R.T Services -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="./Pages/art-services.html">A.R.T Services for
-                                University Collaboration</a>
+                        <div class="product_box_heading"><a href="#">A.R.T Services for University Collaboration</a>
                         </div>
 
                         <div class="product_box_link">
-                            <a href="./Pages/art-services.html">Download Brochure</a>
+                            <a href="#">Download Brochure</a>
                         </div>
 
                     </div>
@@ -241,232 +236,136 @@
 
             </div>
 
+            <div class="product_nav">
+
+                <div class="product_nav_links">
+                    <a href="../Pages/security-products.html">Security Products & Tools</a>
+                    <a href="../Pages/investigation.html">Investigation Solutions & Forensic Services</a>
+                    <a href="../Pages/art-services.html">A.R.T Services for University
+                        Collaboration</a>
+                    <a href="../Pages/research-dev.html">Research and Development Services</a>
+                    <a href="../Pages/wafer-device.html" class="nav_link_active">WAFER Device Registration</a>
+                </div>
+
+            </div>
+
         </div>
         <!-- navigation code -->
 
-        <!-- home content -->
-        <div class="home_container">
+        <!-- product elements -->
+        <div class="product_Elements_container">
 
-            <div class="home_hero_image_container">
+            <div class="wafer_serial_number">
 
-                <div class="home_hero_image_content">
+                <div class="form_container">
 
-                    <div class="home_hero_image_heading">
-                        <span class="we_deliver_text">We Deliver</span>
-                        <span class="Unique_Solutions_text">Unique Solutions</span>
-                    </div>
-                    <div class="home_hero_image_para">
-                        <b>WhiteLint Global</b> is an Indo-American startup focused on providing
-                        Training, Consultancy, and Solutions in Network Security and Digital Forensics to various
-                        agencies. The company is currently headquartered in New Delhi and provides services to offices,
-                        investigation agencies, law firms, government outfits, etc.
-                    </div>
-                    <div class="home_hero_image_button">
-                        <a href="#">View Products</a>
-                    </div>
+                    <form>
 
-                </div>
+                        <!-- First Name And Last Name -->
+                        <div class="form_group">
 
-            </div>
-
-            <div class="what_is_wafer_container">
-
-                <div class="what_is_wafer_content">
-
-                    <div class="security_for_everyone">Security for Everyone</div>
-
-                    <div class="what_is_wafer">
-
-                        <div class="what_is_wafer_heading">What is WAFER ?</div>
-                        <div class="what_is_wafer_para">
-                            WAFER is a content - based, network - filtering framework which can
-                            segregate malafide content over the internet from bonafide content in real time.
-                        </div>
-
-                    </div>
-
-                    <div class="why_is_wafer">
-                        <div class="what_is_wafer_heading">Why WAFER?</div>
-                        <div class="what_is_wafer_para">Anti-Ransomware | Anti-Malware | Anti-Snooping</div>
-                    </div>
-
-                    <div class="what_is_wafer_button">
-                        <a href="#">Explore the Platform</a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="products_services_container" style="display: none;">
-
-                <div class="products_services_content">
-
-                    <!-- product section button -->
-                    <a href="#">
-
-                        <div class="product_link">
-
-                            <div class="product_service_heading">
-
-                                <span>Products</span>
-                                <svg viewBox="0 0 70 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.2">
-                                        <g clip-path="url(#clip0_403_55415)">
-                                            <path
-                                                d="M48.7366 9.10239C48.7219 8.23675 48.7071 7.41512 48.7071 6.62283C48.7071 6.00661 48.206 5.49309 47.5722 5.49309C42.7375 5.49309 39.0526 4.11393 35.9868 1.13552C35.5446 0.710035 34.8518 0.710035 34.4096 1.13552C31.3438 4.09926 27.6589 5.49309 22.8243 5.49309C22.2052 5.49309 21.6893 5.99194 21.6893 6.62283C21.6893 7.41512 21.6746 8.23675 21.6598 9.10239C21.4977 17.1866 21.2913 28.2493 34.8223 32.915C34.9403 32.959 35.0729 32.9737 35.1908 32.9737C35.3088 32.9737 35.4414 32.959 35.5593 32.915C49.0903 28.2493 48.884 17.172 48.7219 9.10239H48.7366ZM35.1908 30.6555C23.576 26.4593 23.7529 17.26 23.915 9.14641C23.915 8.66223 23.9297 8.19273 23.9445 7.72323C28.4696 7.53249 32.0955 6.168 35.1908 3.48303C38.2862 6.168 41.9121 7.53249 46.4372 7.72323C46.4372 8.19273 46.4519 8.66223 46.4667 9.14641C46.6288 17.2747 46.791 26.4593 35.1908 30.6555Z"
-                                                fill="white" />
-                                            <path
-                                                d="M39.0811 12.9903L33.6274 18.4189L31.2985 16.1007C30.8563 15.6606 30.1341 15.6606 29.7066 16.1007C29.2645 16.5409 29.2645 17.2598 29.7066 17.7L32.8315 20.8104C33.0525 21.0305 33.3473 21.1332 33.6274 21.1332C33.9074 21.1332 34.2022 21.0305 34.4233 20.8104L40.6877 14.5748C41.1299 14.1347 41.1299 13.4158 40.6877 12.9903C40.2455 12.5501 39.5233 12.5501 39.0958 12.9903H39.0811Z"
-                                                fill="white" />
-                                            <path
-                                                d="M68.2361 31.3457L34.8508 44.9026L2.1582 31.4631V66.1182L34.836 82.5068L68.5751 65.0619C68.5751 65.0619 67.9266 31.0669 68.2214 31.3604L68.2361 31.3457Z"
-                                                stroke="white" stroke-width="1.63491" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M34.8359 44.8867V82.2268" stroke="white" stroke-width="1.63491"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M2.16016 31.4636L20.7616 24.3477" stroke="white"
-                                                stroke-width="1.63491" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M68.2362 31.3446L49.7969 23.4805" stroke="white"
-                                                stroke-width="1.63491" stroke-miterlimit="10" stroke-linecap="round" />
-                                            <path d="M52.0234 38.4316V54.8202" stroke="white" stroke-width="1.63491"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_403_55415">
-                                            <rect width="69.2027" height="83.0433" fill="white"
-                                                transform="translate(0.773438 0.828125)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
+                            <div class="inner_form_group">
+                                <label for="first_name">First name</label>
+                                <input type="text" id="first_name" name="first_name" required>
                             </div>
 
-                            <div class="product_service_para">
-                                All variants cater to different kinds of critical information systems and guarantee
-                                security against any Trojans, worms, and zero-day vulnerabilities/attacks.
-                            </div>
-
-                            <div class="product_service_button">Explore</div>
-
-                            <div class="product_design_element">
-
-                                <svg viewBox="0 0 30 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M29.5461 23.3773L1.42125 45.2157C0.842444 45.6651 -0.000101005 45.2526 -0.000100948 44.5198L-9.75808e-05 1.79984C-9.75231e-05 1.06703 0.842447 0.654531 1.42126 1.10396L29.5461 22.9424C29.6881 23.0526 29.6881 23.2671 29.5461 23.3773Z"
-                                        fill="#032747" />
-                                </svg>
-
+                            <div class="inner_form_group">
+                                <label for="last_name">First name</label>
+                                <input type="text" id="last_name" name="last_name" required>
                             </div>
 
                         </div>
+                        <!-- First Name And Last Name -->
 
-                    </a>
-                    <!-- product section button -->
+                        <!-- Email Addres -->
+                        <div class="form_group">
 
-                    <!-- service section button -->
-                    <a href="#">
-
-                        <div class="Services_link">
-
-                            <div class="product_service_heading">
-
-                                <span>Services</span>
-
-                                <svg viewBox="0 0 77 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.2" clip-path="url(#clip0_403_55425)">
-                                        <path
-                                            d="M23.4591 7.60458L24.4568 12.0823C24.5935 12.6766 24.3475 13.2985 23.8281 13.6164C22.6118 14.3488 21.4638 15.178 20.3568 16.0763C19.8785 16.4633 19.2225 16.4909 18.7032 16.1593L14.8492 13.6993C12.8265 12.4002 10.1479 13.0083 8.8632 15.0537L4.21655 22.4751C2.93189 24.5205 3.53322 27.2292 5.55588 28.5283L9.3962 30.9883C9.91553 31.32 10.1615 31.9419 10.0249 32.5362C9.68319 33.932 9.43719 35.3417 9.28686 36.7651C9.21853 37.3732 8.7812 37.8708 8.17987 38.0089L3.75189 39.0178C1.4149 39.543 -0.0474299 41.8924 0.471901 44.2557L2.37156 52.8103C2.89089 55.1736 5.21421 56.6524 7.5512 56.1272L11.9792 55.1183C12.5668 54.9801 13.1818 55.2289 13.4962 55.754C14.2342 56.984 15.0405 58.1449 15.9425 59.2644C16.3252 59.7481 16.3525 60.4114 16.0245 60.9366L13.5918 64.8339C12.3209 66.8793 12.9085 69.5742 14.9312 70.8871L22.2565 75.586C24.2791 76.8851 26.9578 76.277 28.2424 74.2316L31.8368 68.5101C32.2468 67.819 32.0418 66.9207 31.3584 66.5061C30.6888 66.0915 29.8278 66.285 29.4041 66.9484L25.8098 72.6699C25.3861 73.3471 24.4841 73.5544 23.8145 73.126L16.4892 68.4271C15.8195 67.9987 15.6145 67.0866 16.0382 66.4094L18.4708 62.5121C19.4685 60.9366 19.3455 58.8912 18.1838 57.4401C17.3775 56.4312 16.6395 55.3809 15.9698 54.2753C15.0132 52.6721 13.1408 51.8844 11.3369 52.299L6.90887 53.3079C6.12988 53.4875 5.36455 52.99 5.18688 52.2023L3.28722 43.6476C3.10956 42.8598 3.60155 42.0859 4.38055 41.9062L8.80853 40.8974C10.6125 40.4966 11.9655 38.9764 12.1569 37.1106C12.2935 35.8254 12.5122 34.5401 12.8265 33.2825C13.2638 31.4582 12.5122 29.5648 10.9405 28.5698L7.08654 26.096C6.41687 25.6675 6.21188 24.7554 6.63554 24.0782L11.2822 16.6706C11.7059 15.9934 12.5942 15.7861 13.2775 16.2145L17.1315 18.6745C18.6895 19.6834 20.7121 19.559 22.1471 18.3843C23.1448 17.5689 24.1835 16.8226 25.2768 16.1454C26.8621 15.178 27.6411 13.2847 27.2311 11.4604L26.2335 6.98267C26.0558 6.19492 26.5478 5.42099 27.3268 5.24133L35.7864 3.32033C36.5654 3.14067 37.3307 3.63819 37.5084 4.42594L38.5061 8.90368C38.9024 10.7279 40.4057 12.0961 42.2507 12.2896C43.5217 12.4278 44.7927 12.6489 46.0364 12.9668C47.8404 13.4091 49.7127 12.6489 50.6967 11.0596L53.143 7.16233C53.5667 6.48515 54.4687 6.27784 55.1383 6.70627L62.4636 11.4051C63.1333 11.8336 63.3383 12.7319 62.9146 13.4229L59.334 19.1582C58.8966 19.8354 59.088 20.7337 59.744 21.176C60.4136 21.6182 61.302 21.4247 61.7393 20.7614C61.7393 20.7476 61.753 20.7337 61.7666 20.7199L65.3473 14.9846C66.6319 12.9392 66.0306 10.2304 64.008 8.93132L56.6827 4.23246C54.66 2.93336 51.9813 3.54145 50.6967 5.58684L48.2504 9.4703C47.9224 9.99547 47.3074 10.2442 46.7197 10.106C45.3394 9.76053 43.9454 9.51176 42.5377 9.35974C41.9364 9.29064 41.4444 8.8484 41.3077 8.24031L40.3101 3.76257C39.7907 1.39933 37.4674 -0.0794323 35.1304 0.445734L26.6708 2.36674C24.3338 2.8919 22.8715 5.24133 23.3908 7.60458H23.4591Z"
-                                            fill="white" />
-                                        <path
-                                            d="M25.4536 30.9614C19.905 39.8201 22.5016 51.5534 31.2619 57.1644C31.9452 57.579 32.8336 57.3717 33.2436 56.6807C33.6536 56.0035 33.4486 55.1329 32.8062 54.7044C25.3579 50.0056 23.103 40.0827 27.7496 32.5645C32.3962 25.0325 42.2089 22.7522 49.6435 27.4511C49.6982 27.4925 49.7665 27.534 49.8212 27.5616C50.4908 28.0039 51.3792 27.8242 51.8165 27.147C52.2538 26.4698 52.0762 25.5715 51.4065 25.1293C51.3928 25.1293 51.3792 25.1155 51.3655 25.1016C42.6052 19.4906 31.0022 22.1165 25.4536 30.9752V30.9614Z"
-                                            fill="white" />
-                                        <path
-                                            d="M76.3203 45.5016C76.2929 44.2025 76.2656 42.9725 76.2656 41.7701C76.2656 40.8303 75.5139 40.084 74.5983 40.084C67.4506 40.084 62.0113 38.011 57.474 33.5471C56.8317 32.9114 55.793 32.9114 55.137 33.5471C50.5997 38.011 45.1604 40.084 38.0128 40.084C37.0834 40.084 36.3454 40.8442 36.3454 41.7701C36.3454 42.9586 36.3181 44.1886 36.2908 45.5016C36.0584 57.6357 35.7441 74.2475 55.752 81.2681C55.9297 81.3372 56.121 81.3649 56.2987 81.3649C56.4763 81.3649 56.6677 81.3372 56.8454 81.2681C76.8533 74.2613 76.5389 57.6357 76.3066 45.5016H76.3203ZM56.3124 77.8684C39.1608 71.5664 39.4204 57.76 39.6391 45.5568C39.6528 44.8244 39.6664 44.1195 39.6801 43.4147C46.3767 43.1245 51.734 41.0791 56.3124 37.0436C60.8907 41.0791 66.248 43.1383 72.9446 43.4147C72.9446 44.1057 72.972 44.8244 72.9856 45.5568C73.2179 57.76 73.4776 71.5664 56.3124 77.8684Z"
-                                            fill="white" />
-                                        <path
-                                            d="M62.0667 51.3473L54.0034 59.5012L50.5594 56.0185C49.9034 55.3551 48.8511 55.3551 48.1951 56.0185C47.5391 56.6819 47.5391 57.746 48.1951 58.4094L52.8144 63.0806C53.1424 63.4123 53.5661 63.5781 53.9898 63.5781C54.4134 63.5781 54.8508 63.4123 55.1651 63.0806L64.4174 53.7244C65.0734 53.061 65.0734 51.9968 64.4174 51.3335C63.7614 50.6701 62.7091 50.6701 62.0531 51.3335L62.0667 51.3473Z"
-                                            fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_403_55425">
-                                            <rect width="76" height="81" fill="white"
-                                                transform="translate(0.375 0.349609)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
+                            <div class="inner_single_form_group">
+                                <label for="email_address">Email</label>
+                                <input type="email" id="email_address" name="email_address" required>
                             </div>
 
-                            <div class="product_service_para">
-                                Unique line of Network Forensic tools. Manufactured for the
-                                first time in India and uniquely designed to cater to the investigation process.
+                        </div>
+                        <!-- Email Addres -->
+
+                        <!-- Contact Number and Industry  -->
+                        <div class="form_group">
+
+                            <div class="inner_form_group">
+                                <label for="contact_number">Contact No</label>
+                                <input type="tel" id="contact_number" name="contact_number" maxlength="10"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                    required>
                             </div>
 
-                            <div class="product_service_button">Explore</div>
+                            <div class="inner_form_group">
+                                <label for="last_name">Industry</label>
+                                <input type="text" id="last_name" name="last_name" required>
+                            </div>
+
+                        </div>
+                        <!-- Contact Number and Industry  -->
+
+                        <!-- Model Name -->
+                        <div class="form_group">
+
+                            <div class="inner_single_form_group">
+                                <label for="model_name">Model Name.</label>
+                                <input type="text" id="model_name" name="model_name" required>
+                            </div>
+
+                        </div>
+                        <!-- Model Name -->
+
+                        <!-- Model serial number -->
+                        <div class="form_group">
+
+                            <div class="inner_single_form_group">
+                                <label for="serial_number">Model Serial No.</label>
+                                <input type="text" id="serial_number" name="serial_number" required>
+                            </div>
+
+                        </div>
+                        <!-- Model serial number -->
+
+                        <!-- City Name And Counrty Name -->
+                        <div class="form_group">
+                            <div class="inner_form_group">
+                                <label for="city">City</label>
+                                <input type="tel" id="city" name="city" required>
+                            </div>
+
+                            <div class="inner_form_group">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" name="country" required>
+                            </div>
+                        </div>
+                        <!-- City Name And Counrty Name -->
+
+                        <div class="form_checkbox">
+                            <div class="squaredThree">
+                                <input type="checkbox" value="None" id="check_box" name="check_box" required />
+                                <label for="check_box"></label>
+                            </div>
+                            <span>You agree to our friendly <a href="#">Privacy Policy.</a></span>
+                        </div>
+
+                        <div class="form_button">
+
+                            <button>
+                                Submit
+                            </button>
 
                         </div>
 
-                    </a>
-                    <!-- service section button -->
-
-                </div>
-
-                <div class="Product_section_design_element">
-                    <svg viewBox="0 0 81 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="2.50973" cy="2.50973" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="17.5683" cy="2.50973" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="32.6269" cy="2.50973" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="47.6855" cy="2.50973" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="62.7441" cy="2.50973" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="77.8027" cy="2.50973" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="2.50973" cy="15.4179" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="2.50973" cy="28.3242" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="2.50973" cy="41.2304" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="17.5683" cy="15.4179" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="17.5683" cy="28.3242" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="17.5683" cy="41.2304" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="32.6269" cy="15.416" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="32.6269" cy="28.3242" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="32.6269" cy="41.2324" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="47.6855" cy="15.416" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="47.6855" cy="28.3242" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="47.6855" cy="41.2324" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="62.7441" cy="15.416" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="62.7441" cy="28.3242" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="62.7441" cy="41.2324" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="77.8027" cy="15.416" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="77.8027" cy="28.3242" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                        <circle cx="77.8027" cy="41.2304" r="2.50973" fill="#BDBDBD" fill-opacity="0.2" />
-                    </svg>
+                    </form>
 
                 </div>
 
             </div>
-
-            <div class="graph"></div>
-
-            <div class="video_carousal_container" style="display: none;">
-
-                <div class="videos_box_wrapper">
-
-                    <div class="video_box"></div>
-                    <div class="video_box"></div>
-                    <div class="video_box"></div>
-                    <div class="video_box"></div>
-                    <div class="video_box"></div>
-
-                </div>
-
-            </div>
-
-            <!-- https://i.postimg.cc/kMVSsNdk/video1.png -->
-            <!-- https://i.postimg.cc/6qGBZ5gm/video2.png -->
-            <!-- https://i.postimg.cc/F15NVXQs/video3.png-->
 
         </div>
-        <!-- home content -->
+        <!-- product elements -->
 
         <!-- footer code -->
         <footer>
@@ -601,7 +500,7 @@
 
     </main>
 
-    <script src="./jsWorkings/index.js"></script>
+    <script src="../jsWorkings/index.js"></script>
     <script src="./jsWorkings/home.js"></script>
 
 </body>

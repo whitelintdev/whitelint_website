@@ -55,6 +55,7 @@
 .nav_link_active{
     color: #FF590C !important;
     font-weight: 600;
+    opacity: 1 !important;
 }
 
 

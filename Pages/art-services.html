@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../cssStyling/index.css">
+
+    <link rel="stylesheet" href="../cssStyling/navigation/nav.css">
+    <link rel="stylesheet" href="../cssStyling/navigation/media_query_nav.css">
+
+    <link rel="stylesheet" href="../cssStyling/footer/footer.css">
+    <link rel="stylesheet" href="../cssStyling/footer/media_query_footer.css">
+
+    <link rel="stylesheet" href="../cssStyling/product/product.css">
+    <link rel="stylesheet" href="../cssStyling/product/media_query_product.css">
+
+    <title>Whitelint - Products & Services</title>
+</head>
+
+<body id="main_conatiner">
+
+    <main>
+
+        <!-- navigation code -->
+        <div class="nav_bar_container" id="nav_bar_container">
+
+            <div class="company_logo">
+                <a href="../index.html">
+                    <img src="https://i.postimg.cc/66nqGKPF/Whitelint-Logo.png" alt="Whitelint Company logo">
+                </a>
+            </div>
+
+            <div class="website_links">
+
+                <div class="home_link">
+                    <a href="../index.html">
+                        <span class="normal_nav_link">Home</span>
+                    </a>
+                </div>
+
+                <div class="product_services_link" onclick="open_product_Service_bar()">
+
+                    <span class="normal_nav_link nav_link_active">Products & Services</span>
+                    <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 1L7 7L1 1" stroke="white" stroke-width="2" />
+                    </svg>
+
+                </div>
+
+                <div class="blog_link">
+                    <a href="#">
+                        <span class="normal_nav_link">Blogs</span>
+                    </a>
+                </div>
+
+                <div class="about_link">
+                    <a href="#">
+                        <span class="normal_nav_link">About us</span>
+                    </a>
+                </div>
+
+                <div class="contact_us_link">
+                    <a href="#">
+                        <span class="normal_nav_link">Contact Us</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="side_bar_links">
+
+                <button onclick="open_close_side_bar('open')">
+                    <svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7H19M1 1H19M1 13H19" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="side_bar_content_wrapper" id="side_bar_content_wrapper">
+
+                    <div class="empty" onclick="open_close_side_bar('close')"></div>
+
+                    <div class="side_bar_content_container" id="side_bar_content_container">
+
+                        <div class="side_bar_links_container" id="side_bar_links_container">
+
+                            <div class="side_bar_close_button">
+
+                                <button onclick="open_close_side_bar('close')">
+                                    <svg viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_224_50436)">
+                                            <path
+                                                d="M3.81055 3.49951L6.16895 5.86133L5.86133 6.16895L3.49951 3.81055L1.1377 6.16895L0.830078 5.86133L3.18848 3.49951L0.830078 1.1377L1.1377 0.830078L3.49951 3.18848L5.86133 0.830078L6.16895 1.1377L3.81055 3.49951Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_224_50436">
+                                                <rect width="7" height="7" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                            <div class="home">
+                                <a href="#">
+                                    <span>Home</span>
+                                </a>
+                            </div>
+                            <div class="product_Service">
+
+                                <span onclick="open_product_inner_section()">
+                                    Product & Services
+                                    <svg viewBox="0 0 5 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.16125 0.505859L2.5 1.84169L3.83875 0.505859L4.25 0.917109L2.5 2.66711L0.75 0.917109L1.16125 0.505859Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+
+                                <div class="product_Service_inner" id="product_Service_inner">
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Security Products and Tools</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Investigation Solutions & Forensic Services</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;Research and Development Services</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;A.R.T Services for University Collaboration</a>
+                                    <a href="#">&#x2022;&nbsp;&nbsp;WAFER Registration Portal</a>
+                                </div>
+
+                            </div>
+                            <div class="about_us">
+                                <a href="#">
+                                    <span>About Us</span>
+                                </a>
+                            </div>
+                            <div class="blogs">
+                                <a href="#">
+                                    <span>Blogs</span>
+                                </a>
+                            </div>
+                            <div class="contact_us">
+                                <a href="#">
+                                    <span>Contact Us</span>
+                                </a>
+                            </div>
+                            <div class="privacy_Plocy">
+                                <a href="#">
+                                    <span>Privacy Policy</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="products_bar_container" id="products_bar_container">
+
+                <div class="products_bar">
+
+                    <!-- Security products -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">Security Products</a></div>
+
+                        <div class="product_box_link">
+                            <a href="#">WAFER Chip 1.0</a>
+                            <a href="#">WAFER Nova 2.1</a>
+                            <a href="#">WAFER Nova 2.2.x</a>
+                            <a href="#">WAFER Supernova 3.0</a>
+                        </div>
+
+                    </div>
+                    <!-- Security products -->
+
+                    <!-- Investigation -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">Investigation Solutions & Forensic Services</a>
+                        </div>
+
+                        <div class="product_box_link">
+                            <a href="#">Creep</a>
+                            <a href="#">Track</a>
+                            <a href="#">Darkhound</a>
+                            <a href="#">IPDR Analyzer</a>
+                        </div>
+
+                    </div>
+                    <!-- Investigation -->
+
+                    <!-- A.R.T Services -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">A.R.T Services for University Collaboration</a>
+                        </div>
+
+                        <div class="product_box_link">
+                            <a href="#">Download Brochure</a>
+                        </div>
+
+                    </div>
+                    <!-- A.R.T Services -->
+
+                    <!-- Research & Development -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">Research & Development Services</a></div>
+                        <div class="product_box_link">
+                            <a href="#">Download WAFER Web-Resources</a>
+                        </div>
+
+                    </div>
+                    <!-- Research & Development -->
+
+                    <!--WAFER Registration Portal -->
+                    <div class="products_box">
+
+                        <div class="product_box_heading"><a href="#">WAFER Registration Portal</a></div>
+                        <div class="product_box_link">
+                            <a href="#">Registration Form</a>
+                            <a href="#">Download WAFER Web-Resources</a>
+                        </div>
+
+                    </div>
+                    <!--WAFER Registration Portal -->
+
+                </div>
+
+            </div>
+
+            <div class="product_nav">
+
+                <div class="product_nav_links">
+                    <a href="../Pages/security-products.html">Security Products & Tools</a>
+                    <a href="../Pages/investigation.html">Investigation Solutions & Forensic Services</a>
+                    <a href="../Pages/art-services.html" class="nav_link_active">A.R.T Services for University
+                        Collaboration</a>
+                    <a href="../Pages/research-dev.html">Research and Development Services</a>
+                    <a href="#">WAFER Device Registration</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- navigation code -->
+
+        <!-- product elements -->
+        <div class="product_Elements_container">
+
+            <div class="atr_content_container">
+
+                <div class="atr_content_wrapper">
+                    <div class="art_heading">
+                        A.R.T Services for University Collaboration
+                    </div>
+                    <!-- 
+                    <div class="art_byline">
+                        Conducted through WhiteLint Scholar
+                    </div> -->
+                    <!-- 
+                    <div class="art_image">
+                        <img src="https://i.postimg.cc/90zKyzHs/art-whitelint-scholar.png"
+                            alt="whitelint Scholar Image">
+                    </div> -->
+
+                    <div class="art_para">
+                        The Academic Consultation extends to private Universities willing to establish courses in
+                        forensic science amongst their faculties. Our services allow such Universities to establish
+                        infrastructure and hire UGC qualified faculty members suitable to conduct undergraduate and
+                        postgraduate courses in Forensic Science, Cyber Security, Digital Forensics, Information
+                        Security and Assurance, eDiscovery and Cyber Law.
+                    </div>
+                    <!-- 
+                    <div class="art_button">
+                        <button>
+                            Download Brochure
+                        </button>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- product elements -->
+
+        <!-- footer code -->
+        <footer>
+
+            <div class="footer_link_grid">
+
+                <div class="footer_grid_links">
+
+                    <div class="footer_link_heading">Security products</div>
+                    <div class="footer_links_container">
+                        <a href="#">WAFER Chip 1.0</a>
+                        <a href="#">WAFER Nova 2.1</a>
+                        <a href="#">WAFER Nova 2.2.x</a>
+                        <a href="#">WAFER SuperNova 3.0</a>
+                        <a href="#">WAFER Probe</a>
+                    </div>
+
+                </div>
+
+                <div class="footer_grid_links">
+
+                    <div class="footer_link_heading">Service</div>
+                    <div class="footer_links_container">
+                        <a href="#">A.R.T Services for University Collaboration</a>
+                        <a href="#">Research & Development Services</a>
+                        <a href="#">Investigation Solutions & Forensic Services</a>
+                        <a href="#">WAFER Registration Portal</a>
+                    </div>
+
+                </div>
+
+                <div class="footer_grid_links">
+
+                    <div class="footer_link_heading">Company</div>
+                    <div class="footer_links_container">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">Contact us</a>
+                    </div>
+
+                </div>
+
+                <div class="footer_grid_links">
+
+                    <div class="footer_link_heading">HEADQUARTERS</div>
+                    <div class="footer_links_container">
+                        <a href="#">CGN-224, DLF Capital Greens, 15 Shivaji Marg, New Delhi, 110015</a>
+                        <a href="#">+91 11 4669 6206</a>
+                        <a href="#">contact@whitelint.com</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="orange_line"></div>
+
+            <div class="copy_right_socal_media">
+                <span>© 2023 Whitelint. All rights reserved.</span>
+
+                <div class="social_media_icons_container">
+
+                    <!-- Intagram -->
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.007 2.16136C15.2152 2.16136 15.5951 2.17542 16.8568 2.23169C18.0293 2.28326 18.6625 2.48017 19.0846 2.64427C19.6428 2.85993 20.0461 3.12248 20.4636 3.53975C20.8857 3.96171 21.1436 4.36023 21.3594 4.91815C21.5235 5.34011 21.7205 5.97773 21.7721 7.14515C21.8284 8.41102 21.8425 8.79078 21.8425 11.993C21.8425 15.1998 21.8284 15.5796 21.7721 16.8408C21.7205 18.0129 21.5235 18.6458 21.3594 19.0678C21.1436 19.6257 20.881 20.0289 20.4636 20.4462C20.0414 20.8681 19.6428 21.126 19.0846 21.3417C18.6625 21.5058 18.0246 21.7027 16.8568 21.7542C15.5904 21.8105 15.2105 21.8246 12.007 21.8246C8.79891 21.8246 8.419 21.8105 7.15732 21.7542C5.98476 21.7027 5.35157 21.5058 4.92945 21.3417C4.37131 21.126 3.96795 20.8635 3.55052 20.4462C3.1284 20.0242 2.87043 19.6257 2.65468 19.0678C2.49052 18.6458 2.29353 18.0082 2.24194 16.8408C2.18566 15.5749 2.17158 15.1952 2.17158 11.993C2.17158 8.78609 2.18566 8.40633 2.24194 7.14515C2.29353 5.97304 2.49052 5.34011 2.65468 4.91815C2.87043 4.36023 3.13309 3.95702 3.55052 3.53975C3.97264 3.1178 4.37131 2.85993 4.92945 2.64427C5.35157 2.48017 5.98945 2.28326 7.15732 2.23169C8.419 2.17542 8.79891 2.16136 12.007 2.16136ZM12.007 0C8.74731 0 8.33926 0.0140652 7.05882 0.0703262C5.78308 0.126587 4.906 0.332877 4.14618 0.628248C3.35353 0.937683 2.68282 1.34558 2.01681 2.01602C1.3461 2.68177 0.93805 3.35222 0.628493 4.13987C0.333008 4.90408 0.126637 5.77613 0.0703537 7.05138C0.0140707 8.336 0 8.7439 0 12.0023C0 15.2608 0.0140707 15.6687 0.0703537 16.9486C0.126637 18.2239 0.333008 19.1006 0.628493 19.8601C0.93805 20.6525 1.3461 21.3229 2.01681 21.9887C2.68282 22.6544 3.35353 23.067 4.14149 23.3718C4.906 23.6671 5.77839 23.8734 7.05413 23.9297C8.33457 23.9859 8.74262 24 12.0023 24C15.2621 24 15.6701 23.9859 16.9506 23.9297C18.2263 23.8734 19.1034 23.6671 19.8632 23.3718C20.6512 23.067 21.3219 22.6544 21.9879 21.9887C22.6539 21.3229 23.0666 20.6525 23.3715 19.8648C23.667 19.1006 23.8734 18.2286 23.9296 16.9533C23.9859 15.6734 24 15.2655 24 12.007C24 8.74858 23.9859 8.34069 23.9296 7.06075C23.8734 5.78551 23.667 4.90877 23.3715 4.14925C23.076 3.35222 22.668 2.68177 21.9973 2.01602C21.3312 1.35026 20.6605 0.937683 19.8726 0.632936C19.1081 0.337566 18.2357 0.131276 16.9599 0.0750147C15.6748 0.0140653 15.2668 0 12.007 0Z"
+                                fill="#98A2B3" />
+                            <path
+                                d="M12.0075 5.83691C8.6024 5.83691 5.83984 8.59839 5.83984 12.0022C5.83984 15.406 8.6024 18.1674 12.0075 18.1674C15.4126 18.1674 18.1752 15.406 18.1752 12.0022C18.1752 8.59839 15.4126 5.83691 12.0075 5.83691ZM12.0075 16.0014C9.79841 16.0014 8.00674 14.2104 8.00674 12.0022C8.00674 9.79394 9.79841 8.00296 12.0075 8.00296C14.2166 8.00296 16.0083 9.79394 16.0083 12.0022C16.0083 14.2104 14.2166 16.0014 12.0075 16.0014Z"
+                                fill="#98A2B3" />
+                            <path
+                                d="M19.8583 5.59364C19.8583 6.39067 19.2111 7.03299 18.4184 7.03299C17.6211 7.03299 16.9785 6.38599 16.9785 5.59364C16.9785 4.79661 17.6258 4.1543 18.4184 4.1543C19.2111 4.1543 19.8583 4.8013 19.8583 5.59364Z"
+                                fill="#98A2B3" />
+                        </svg>
+                    </a>
+                    <!-- Intagram -->
+
+                    <!-- twitter -->
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.55016 21.7497C16.6045 21.7497 21.5583 14.2465 21.5583 7.74162C21.5583 7.53068 21.5536 7.31505 21.5442 7.10412C22.5079 6.40722 23.3395 5.54401 24 4.55505C23.1025 4.95436 22.1496 5.21514 21.1739 5.32849C22.2013 4.71266 22.9705 3.74523 23.3391 2.60552C22.3726 3.17831 21.3156 3.58237 20.2134 3.80037C19.4708 3.01132 18.489 2.48887 17.4197 2.31381C16.3504 2.13874 15.2532 2.32081 14.2977 2.83185C13.3423 3.3429 12.5818 4.15446 12.1338 5.14107C11.6859 6.12767 11.5754 7.23437 11.8195 8.29005C9.86249 8.19185 7.94794 7.68346 6.19998 6.79785C4.45203 5.91225 2.90969 4.66919 1.67297 3.14927C1.0444 4.233 0.852057 5.5154 1.13503 6.73585C1.418 7.95629 2.15506 9.0232 3.19641 9.71974C2.41463 9.69492 1.64998 9.48444 0.965625 9.10568V9.16662C0.964925 10.3039 1.3581 11.4063 2.07831 12.2865C2.79852 13.1667 3.80132 13.7703 4.91625 13.9947C4.19206 14.1929 3.43198 14.2218 2.69484 14.0791C3.00945 15.0572 3.62157 15.9126 4.44577 16.5261C5.26997 17.1395 6.26512 17.4804 7.29234 17.501C5.54842 18.8709 3.39417 19.6139 1.17656 19.6104C0.783287 19.6098 0.390399 19.5857 0 19.5382C2.25286 20.9835 4.87353 21.7511 7.55016 21.7497Z"
+                                fill="#98A2B3" />
+                        </svg>
+
+                    </a>
+                    <!-- twitter -->
+
+                    <!-- linked in -->
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_465_39459)">
+                                <path
+                                    d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
+                                    fill="#98A2B3" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_465_39459">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <!-- linked in -->
+
+                    <!-- facebook -->
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_465_39462)">
+                                <path
+                                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                                    fill="#98A2B3" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_465_39462">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <!-- facebook -->
+
+                </div>
+            </div>
+
+
+        </footer>
+        <!-- footer code -->
+
+    </main>
+
+    <script src="../jsWorkings/index.js"></script>
+    <script src="./jsWorkings/home.js"></script>
+
+</body>
+
+</html>
