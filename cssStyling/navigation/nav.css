@@ -1,5 +1,7 @@
 .nav_bar_container{
-    width: 100%;
+    width: 2000px;
+    max-width: 100%;
+    margin: 0 auto;
     height: 100px;
     background-color: #001A2F;
     display: flex;
@@ -8,7 +10,6 @@
     padding: 0px 20px;
     position: fixed;
     top: 0;
-    left: 0;
 
     z-index: 10;
 
@@ -73,6 +74,7 @@
 }
 .product_services_link svg{
     width: 15px;
+    cursor: pointer;
 }
 
 

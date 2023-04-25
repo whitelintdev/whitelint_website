@@ -60,3 +60,28 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 // navigation_workings
+
+
+var product_varients_container = document.getElementById('product_varients_container');
+var current_button = '';
+function view_more_content(field) {
+
+    if (current_button == '') { }
+    else {
+        current_button.style.display = 'block'
+    }
+
+    let current_active_box = product_varients_container.querySelector('.varient_box_hidden_text');
+    if (current_active_box == null) { }
+    else {
+        current_active_box.classList.remove('varient_box_hidden_text')
+    }
+
+    field.style.display = 'none';
+
+    let elemento_show = field.parentElement.previousElementSibling;
+    elemento_show.classList.add('varient_box_hidden_text');
+
+    current_button = field;
+
+}
