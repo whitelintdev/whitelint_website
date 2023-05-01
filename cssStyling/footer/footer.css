@@ -4,7 +4,7 @@
 }
 footer{
     width: 100%;
-    padding: 70px 120px 100px 120px;
+    padding: 70px 120px 70px 120px;
     background-color: #05172B;
 }
 .footer_link_grid{
@@ -26,7 +26,7 @@ footer{
 }
 
 .footer_link_heading{
-    font-size: 23px;
+    font-size: 20px;
     margin: 30px 0 16px 0;
     font-weight: 600;
     text-transform: uppercase;
@@ -34,7 +34,7 @@ footer{
 }
 
 .footer_links_container a{
-    font-size: 18px;
+    font-size: 17px;
     margin: 5px 0;
     opacity: 0.7;
     color: white;

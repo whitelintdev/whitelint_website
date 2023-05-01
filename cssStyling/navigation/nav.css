@@ -257,11 +257,15 @@
     width: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .product_Service svg{
     width: 20px;
     margin: 0 0 0 10px;
 }
+
+
+
 
 .product_Service_inner{
     width: 100%;
@@ -270,15 +274,18 @@
     transition: .3s all ease-in-out;
     display: flex;
     flex-direction: column;
-    margin:0 !important;
-    padding: 0 0 0 20px;
+    justify-content: space-evenly;
+    border-left: 1px solid white;
+    margin: 10px 0 -10px 15px !important;
+    padding: 0 10px 0 0;
 }
+
 .product_Service_inner_open{
     height: 190px;
     overflow: auto;
     transition: .3s all ease-in-out;
-    padding: 0 5px 0 0;
 }
+
 .product_Service_inner_open::-webkit-scrollbar {
     width: 2px;
 }
@@ -297,7 +304,15 @@
 .product_Service_inner_open::-webkit-scrollbar-thumb {
     background: #555;
 }
+
 .product_Service_inner a{
     width: 100%;
-    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+.product_Service_inner a span{
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    margin: 0 10px 0 0;
 }

@@ -1,0 +1,65 @@
+@media only screen and (max-width: 1000px) {
+
+    .about_us_first_section {
+        margin: 80px 0 0 0;
+    }
+
+    .section_data_area {
+        height: 80vh;
+        padding: 0 30px;
+    }
+
+
+    .about_section_heading {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .about_section_para {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+
+    .vission_mission_heading {
+        font-size: 30px;
+    }
+
+    .vission_mission_para {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about_us_Our_Mission {
+        padding: 50px 30px 25px 30px;
+    }
+
+    .about_us_Our_vission {
+        padding: 25px 30px 50px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .extra_about_styling {
+        height: calc(80vh - 200px);
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .about_section_heading {
+        font-size: 25px;
+        margin: 0 0 10px 0;
+    }
+
+    .about_section_para {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .about_section_para {
+        line-height: 1.1;
+    }
+}

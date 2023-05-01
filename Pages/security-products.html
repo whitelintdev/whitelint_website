@@ -20,7 +20,7 @@
     <title>Whitelint - Products & Services</title>
 </head>
 
-<body id="main_conatiner">
+<body id="main_conatiner" onload="onload_get_data()">
 
     <main>
 
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="about_link">
-                    <a href="#">
+                    <a href="./aboutUs.html">
                         <span class="normal_nav_link">About us</span>
                     </a>
                 </div>
@@ -111,6 +111,7 @@
                                     <span>Home</span>
                                 </a>
                             </div>
+
                             <div class="product_Service">
 
                                 <span onclick="open_product_inner_section()">
@@ -124,33 +125,54 @@
                                 </span>
 
                                 <div class="product_Service_inner" id="product_Service_inner">
-                                    <a href="./security-products.html">&#x2022;&nbsp;&nbsp;Security Products and
-                                        Tools</a>
-                                    <a href="./investigation.html">&#x2022;&nbsp;&nbsp;Investigation Solutions &
-                                        Forensic Services</a>
-                                    <a href="./research-dev.html">&#x2022;&nbsp;&nbsp;Research and Development
-                                        Services</a>
-                                    <a href="./art-services.html">&#x2022;&nbsp;&nbsp;A.R.T Services for University
-                                        Collaboration</a>
-                                    <a href="./wafer-device.html">&#x2022;&nbsp;&nbsp;WAFER Registration Portal</a>
+
+                                    <a href="./security-products.html">
+                                        <span class="pointer_arrow"></span>
+                                        Security Products and Tools
+                                    </a>
+
+                                    <a href="./investigation.html">
+                                        <span class="pointer_arrow"></span>
+                                        Investigation Solutions & Forensic Services
+                                    </a>
+
+                                    <a href="./research-dev.html">
+                                        <span class="pointer_arrow"></span>
+                                        Research and Development Services
+                                    </a>
+
+                                    <a href="./art-services.html">
+                                        <span class="pointer_arrow"></span>
+                                        A.R.T Services for University Collaboration
+                                    </a>
+
+                                    <a href="./wafer-device.html">
+                                        <span class="pointer_arrow"></span>
+                                        WAFER Registration Portal
+                                    </a>
+
                                 </div>
 
                             </div>
+
                             <div class="about_us">
-                                <a href="#">
+                                <a href="./aboutUs.html">
                                     <span>About Us</span>
                                 </a>
                             </div>
+
                             <div class="blogs">
                                 <a href="#">
                                     <span>Blogs</span>
                                 </a>
                             </div>
+
                             <div class="contact_us">
                                 <a href="#">
                                     <span>Contact Us</span>
                                 </a>
                             </div>
+
                             <div class="privacy_Plocy">
                                 <a href="#">
                                     <span>Privacy Policy</span>
@@ -179,6 +201,7 @@
                             <a href="#WAFER_CHIP_2">WAFER Nova 2.1</a>
                             <a href="#WAFER_CHIP_3">WAFER Nova 2.2.x</a>
                             <a href="#WAFER_CHIP_4">WAFER Supernova 3.0</a>
+                            <a href="#WAFER_CHIP_5">WAFER Probe</a>
                         </div>
 
                     </div>
@@ -187,7 +210,8 @@
                     <!-- Investigation -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="#">Investigation Solutions & Forensic Services</a>
+                        <div class="product_box_heading"><a href="./investigation.html">Investigation Solutions &
+                                Forensic Services</a>
                         </div>
 
                         <div class="product_box_link">
@@ -232,7 +256,7 @@
                         </div>
                         <div class="product_box_link">
                             <a href="./wafer-device.html">Registration Form</a>
-                            <a href="#">Download WAFER Web-Resources</a>
+                            <a href="./wafer-device.html">Download WAFER Web-Resources</a>
                         </div>
 
                     </div>
@@ -589,7 +613,7 @@
                     <div class="footer_link_heading">Company</div>
                     <div class="footer_links_container">
                         <a href="../index.html">Home</a>
-                        <a href="#">About Us</a>
+                        <a href="./aboutUs.html">About Us</a>
                         <a href="#">Blogs</a>
                         <a href="#">Contact us</a>
                     </div>
@@ -604,6 +628,7 @@
                         <a href="#WAFER_CHIP_2">WAFER Nova 2.0</a>
                         <a href="#WAFER_CHIP_3">WAFER Nova 2.2.x</a>
                         <a href="#WAFER_CHIP_4">WAFER Supernova 3.0</a>
+                        <a href="#WAFER_CHIP_5">WAFER Probe</a>
                     </div>
 
                 </div>
@@ -705,13 +730,13 @@
                 </div>
             </div>
 
-
         </footer>
         <!-- footer code -->
 
     </main>
 
     <script src="../jsWorkings/index.js"></script>
+    <script src="../jsWorkings/products.js"></script>
 
 </body>
 

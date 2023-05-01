@@ -1,98 +1,317 @@
-@media only screen and (max-width: 1200px) {
-    .what_is_wafer_container{
+@media only screen and (max-width: 1460px) {
+    .what_is_wafer_container {
         background-size: cover;
         background-position: left center;
-
     }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .Product_section_design_element svg {
+        width: 100px;
+        margin: 50px 30px;
+    }
+
+    .video_box_image_design_element {
+        display: none;
+    }
+
+    .vide_box_play_button {
+        opacity: .8;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+
+
+    .video_box_image img {
+        object-fit: none;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
 
-    .home_hero_image_content{
+    .home_hero_image_content {
         width: 500px;
     }
 
-    .home_hero_image_heading{
+    .home_hero_image_heading {
         font-size: 45px;
     }
 
-    .home_hero_image_para{
+    .home_hero_image_para {
         margin: 30px 0 50px 0;
         font-size: 16px;
     }
 
-    .home_hero_image_button a{
+    .home_hero_image_button a {
         font-size: 16px;
+    }
+
+
+
+    .product_service_heading svg {
+        width: 60px;
+    }
+
+    .product_service_heading span {
+        font-size: 35px;
+    }
+
+    .product_service_para {
+        font-size: 15px;
+        padding: 20px 0px 30px 0;
+    }
+
+    .product_design_element {
+        height: 325px;
+    }
+
+
+
+
+    .video_content_wrapper {
+        height: 320px;
+    }
+
+    .video_box_image img {
+        height: 300px;
+    }
+
+    .vide_box_play_button {
+        height: 300px;
+    }
+
+    .video_box_detail {
+        width: 40%;
+    }
+
+    .video_box_topic {
+        font-size: 20px;
+    }
+
+
+    .video_box_description {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    .video_box_image_contaienr {
+        width: 60%;
+    }
+
+
+    .video_carousal_container {
+        padding: 50px 30px;
+    }
+
+    .Video_heading {
+        font-size: 30px;
     }
 
 }
 
 @media only screen and (max-width: 900px) {
 
-    .what_is_wafer_container{
+    .what_is_wafer_container {
         padding: 60px 30px;
     }
-    .what_is_wafer_content{
+
+    .what_is_wafer_content {
         padding: 20px 0;
     }
 
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px) {
 
-    .what_is_wafer_container{
+    .products_services_container {
+        padding: 50px 30px;
+    }
+
+    .product_service_content {
+        flex-direction: column;
+    }
+
+    .product_service_content a {
+        width: 100%;
+    }
+
+    .Product_section_design_element {
+        display: none;
+    }
+
+    .product_design_element {
+        display: none;
+    }
+
+    .product_link {
+        margin: 0 0 30px 0;
+    }
+
+
+
+
+    .video_box_content {
+        flex-direction: column-reverse;
+    }
+
+    .video_box_detail {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .video_box_image_contaienr {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .video_box_description {
+        display: none !important;
+    }
+
+    .video_content_wrapper {
+        height: 340px;
+    }
+
+
+
+    .vide_box_play_button {
+        display: none !important;
+    }
+
+    .video_box_topic {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .video_box_link_action {
+        justify-content: center;
+    }
+
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .what_is_wafer_container {
         padding: 30px 40px;
     }
-    
-    .security_for_everyone{
+
+    .security_for_everyone {
         font-size: 16px;
     }
-    .what_is_wafer_heading{
+
+    .what_is_wafer_heading {
         margin: 20px 0 10px 0;
         font-size: 30px;
     }
-    .what_is_wafer_para{
+
+    .what_is_wafer_para {
         font-size: 15px;
     }
-    .what_is_wafer_button{
+
+    .what_is_wafer_button {
         width: 100%;
         margin: 30px 0 0 0;
     }
-    .what_is_wafer_button a{
+
+    .what_is_wafer_button a {
         font-size: 15px;
-       }
+    }
 
 }
 
 @media only screen and (max-width: 500px) {
 
-    .home_hero_image_heading{
+    .home_hero_image_heading {
         font-size: 35px;
     }
-    .home_hero_image_para{
+
+    .home_hero_image_para {
         padding: 0px 20px;
     }
 
-    .what_is_wafer_container{
+    .what_is_wafer_container {
         padding: 50px 20px 60px 20px;
         background-position: 50px 0;
     }
 
-    .what_is_wafer_content{
+    .what_is_wafer_content {
         width: 100%;
         margin: 0 auto;
-        text-align: center;   
+        text-align: center;
         padding: 0;
     }
-    .what_is_wafer_para{
+
+    .what_is_wafer_para {
         font-size: 15px;
     }
-    .what_is_wafer_button{
+
+    .what_is_wafer_button {
         width: 100%;
         margin: 30px 0 0 0;
     }
-    .what_is_wafer_button a{
+
+    .what_is_wafer_button a {
         font-size: 15px;
-       }
+    }
+
+
+    .product_link {
+        padding: 30px;
+    }
+
+    .Services_link {
+        padding: 30px;
+    }
+
+    .product_link:before {
+        border-top: 40px solid #05172B;
+        border-left: 40px solid transparent;
+    }
+
+    .product_link:after {
+        border-top: 40px solid transparent;
+        border-left: 40px solid #05172B;
+    }
+
+    .product_service_heading span {
+        font-size: 25px;
+    }
+
+    .product_service_heading svg {
+        width: 40px;
+    }
+
+    .product_service_para {
+        font-size: 15px;
+    }
+
+    .product_service_button {
+        font-size: 15px;
+    }
+
+
+
+    .video_box_image_contaienr {
+        display: flex;
+        justify-content: center;
+    }
+
+    .video_box_image img {
+        height: 200px;
+        object-fit: contain;
+        width: auto;
+    }
 
 }

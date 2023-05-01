@@ -33,6 +33,9 @@
     .copy_right_socal_media{
         flex-direction: column;
     }
+    .copy_right_socal_media span{
+       text-align: center;
+    }
     .social_media_icons_container{
         margin: 20px 0 0 0;
     }

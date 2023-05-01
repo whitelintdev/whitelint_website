@@ -27,11 +27,11 @@
     }
     
     .product_category_heading{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     
     .product_category_para{
-        font-size: 15px;
+        font-size: 20px;
     }    
 
     .product_varients{
@@ -62,9 +62,54 @@
     .Investigation_varient_box_image img{
         width: 100%;
     }
+
+
+
+    .form_container{
+        margin: 80px 0 20px 0;
+    }
+    .form_group label{
+        font-size: 15px;
+    }
+    .form_group input{
+        font-size: 15px;
+    }
+    .form_checkbox span{
+        font-size: 15px;
+        margin: 0 0 0 10px;
+    }
+    .form_checkbox span a{
+        font-size: 15px;
+    }
+    
+    .form_button button{
+        font-size: 15px;
+    }
+
+
+
+
+
+    .atr_content_container{
+        margin: 80px 0 0 0;
+        background-position: left bottom;
+    }
+    .atr_content_wrapper{
+        padding: 0px 30px;
+    }
+
+
+    .research_dev_content_container{
+        margin: 80px 0 0 0;
+        background-position: left bottom;
+    }
+    .research_data_container{
+        padding: 0px 30px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+
     .product_category_detail{
         text-align: center;
     }
@@ -75,13 +120,16 @@
         font-size: 12px;
     }
     .product_category_heading{
-        font-size: 30px;
+        font-size: 25px;
     }
+    
+    .product_category_para{
+        font-size: 15px;
+    }   
 
     
     .varient_box{
         flex-direction: column-reverse;
-        margin: 50px 0;
     }
     
     .varient_box_detail{
@@ -111,6 +159,46 @@
         width: 50%;
         
     
+    }
+
+
+    .form_group{
+       flex-direction: column;
+    }
+    .inner_form_group{
+        width: 100%;
+    }
+
+    #first_name{
+        margin: 0 0 30px 0;
+    }
+    #contact_number{
+        margin: 0 0 30px 0;
+    }
+    #city{
+        margin: 0 0 30px 0;
+    }
+
+
+
+
+    .art_heading{
+        text-align: center;
+        font-size: 25px;
+    }
+    .art_para{
+        line-height: normal;
+        font-size: 16px;
+    }
+
+    
+    .research_heading{
+        text-align: center;
+        font-size: 25px;
+    }
+    .research_para{
+        line-height: normal;
+        font-size: 16px;
     }
 
 }

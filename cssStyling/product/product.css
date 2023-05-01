@@ -159,7 +159,7 @@
     max-width: 100%;  
     font-family: nunito_light !important;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px 0;
     text-align: justify;
 }
@@ -371,7 +371,6 @@
 
 .form_button{
     width: 100%;
-    padding: 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
