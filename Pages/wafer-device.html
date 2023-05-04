@@ -289,7 +289,7 @@
 
                 <div class="form_container">
 
-                    <form>
+                    <form id="wafer_registration_Form">
 
                         <!-- First Name And Last Name -->
                         <div class="form_group">
@@ -329,8 +329,8 @@
                             </div>
 
                             <div class="inner_form_group">
-                                <label for="last_name">Industry</label>
-                                <input type="text" id="last_name" name="last_name" required>
+                                <label for="Industry">Industry</label>
+                                <input type="text" id="Industry" name="Industry" required>
                             </div>
 
                         </div>
@@ -380,11 +380,7 @@
                             <span>You agree to our friendly <a href="#">Privacy Policy.</a></span>
                         </div>
 
-                        <div class="form_button">
-
-                            <button>
-                                Submit
-                            </button>
+                        <div class="form_button"><button>Submit</button>
 
                         </div>
 
@@ -529,8 +525,45 @@
 
     </main>
 
+    <script>
+
+        var wafer_registration_Form = document.getElementById('wafer_registration_Form');
+
+        wafer_registration_Form.addEventListener('submit', function (event) {
+
+            event.preventDefault()
+
+            async function postData(url = "", data = {}) {
+                const response = await fetch(url, {
+                    method: "POST",
+                    mode: "cors",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                });
+                return response.json();
+            }
+
+            postData("https://website-backend-gamma.vercel.app/user", {
+                firstName: `${wafer_registration_Form.elements["first_name"].value}`,
+                lastName: `${wafer_registration_Form.elements["last_name"].value}`,
+                email: `${wafer_registration_Form.elements["email_address"].value}`,
+                contactNo: `${wafer_registration_Form.elements["contact_number"].value}`,
+                industry: `${wafer_registration_Form.elements["Industry"].value}`,
+                modelName: `${wafer_registration_Form.elements["model_name"].value}`,
+                modelSerialNo: `${wafer_registration_Form.elements["serial_number"].value}`,
+                city: `${wafer_registration_Form.elements["city"].value}`,
+                country: `${wafer_registration_Form.elements["country"].value}`
+            }).then((data) => {
+                console.log(data);
+            });
+
+
+        })
+    </script>
+
     <script src="../jsWorkings/index.js"></script>
-    <script src="./jsWorkings/home.js"></script>
 
 </body>
 

@@ -1,3 +1,25 @@
+@media only screen and (max-width: 1300px) {
+    .members_content {
+        width: 78%;
+        padding: 20px;
+    }
+
+    .members_content_heading {
+        font-size: 3.5vw;
+    }
+
+    .member_content_designation {
+        font-size: 2.5vw;
+        margin: 2% 0px;
+    }
+
+    .members_content_para {
+        font-size: 1.5vw;
+        line-height: 1.8;
+        height: 80px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 
     .about_us_first_section {
@@ -38,6 +60,14 @@
         padding: 25px 30px 50px 30px;
     }
 
+    .board_of_members_heading {
+        margin: 30px 0px 50px 0;
+    }
+
+    .board_of_members_heading {
+        font-size: 35px;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -45,6 +75,138 @@
         height: calc(80vh - 200px);
         overflow: auto;
     }
+
+    .about_us_Our_Mission {
+        flex-direction: column-reverse;
+    }
+
+    .vission_mission_cotent {
+        width: 100%;
+    }
+
+    .vission_mission_Image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .vission_mission_Image img {
+        width: 70%;
+    }
+
+    .about_us_Our_vission {
+        flex-direction: column-reverse;
+    }
+
+    .vission_mission_heading {
+        text-align: center !important;
+        margin: 20px 0;
+    }
+
+    .vission_mission_para {
+        padding: 0 !important;
+    }
+
+
+    .board_of_memebers {
+        width: 100%;
+        padding: 0 30px 30px 30px;
+    }
+
+    .board_of_members_heading {
+        font-size: 30px;
+        margin: 0px 0 50px 0;
+    }
+
+    .board_of_members_box {
+        flex-direction: column-reverse;
+    }
+
+    .members_content {
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+    }
+
+    .special_memeber_styling {
+        flex-direction: column;
+    }
+
+    .members_image {
+        width: 60%;
+        padding: 10px 10px 5px 10px;
+    }
+
+
+    .members_content_heading {
+        font-size: 25px;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    .member_content_designation {
+        font-size: 15px;
+        margin: 10px 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .members_content_para {
+        height: 200px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* 
+
+
+
+
+
+
+
+
+
+.members_content_heading {
+    font-size: 40px;
+}
+
+.member_content_designation {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #F77B42;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.members_content_para {
+    height: 120px;
+    font-size: 18px;
+    padding: 0 10px 0 0;
+    line-height: 30px;
+    text-align: justify;
+
+    overflow: auto;
+}
+
+.members_content_para::-webkit-scrollbar {
+    width: 3px !important;
+    cursor: pointer;
+}
+
+.members_image {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #015496;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6.60767px #00A3FF;
+}
+
+.members_image img {
+    width: 100%;
+    border-radius: 5px;
+} */
 }
 
 @media only screen and (max-width: 500px) {
