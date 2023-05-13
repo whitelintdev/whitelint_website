@@ -389,6 +389,28 @@
     cursor: pointer;
 }
 
+.registration_complete{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.registration_complete p{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.registration_complete a{
+    text-decoration: none;
+    padding:7px 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    background-image: linear-gradient(to left, #FF4801 , #FE9531);
+    box-shadow: 0px 2px 8px rgba(255, 81, 7, 0.5);
+}
+.registration_complete a:hover{
+    text-decoration: none;
+}
 
 
 

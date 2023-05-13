@@ -1,0 +1,21 @@
+@media only screen and (max-width: 500px) {
+    .privacy_policy_wrapper{
+        padding: 60px 0;
+    } 
+
+    .set > a{
+        font-size: 15px;
+    }
+
+    .privacy_policy_heading{
+        font-size: 25px;
+        margin: 40px 0;
+    }
+    
+    .content{
+        color: white;
+        padding: 10px 20px;
+        text-align: left;
+        font-size: 15px;
+    }
+}

@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="../cssStyling/footer/footer.css">
     <link rel="stylesheet" href="../cssStyling/footer/media_query_footer.css">
 
-    <link rel="stylesheet" href="../cssStyling/product/product.css">
-    <link rel="stylesheet" href="../cssStyling/product/media_query_product.css">
+    <link rel="stylesheet" href="../cssStyling/blogs/blogs.css">
+    <link rel="stylesheet" href="../cssStyling/blogs/media_query_blogs.css">
 
-    <title>Whitelint - Products & Services</title>
+    <title>Whitelint - Blog</title>
 </head>
 
-<body id="main_conatiner">
+<body onload="Fetch_blog_data()">
 
     <main>
 
@@ -28,22 +28,27 @@
         <div class="nav_bar_container" id="nav_bar_container">
 
             <div class="company_logo">
+
                 <a href="../index.html">
                     <img src="https://i.postimg.cc/66nqGKPF/Whitelint-Logo.png" alt="Whitelint Company logo">
                 </a>
+
             </div>
 
             <div class="website_links">
 
                 <div class="home_link">
+
                     <a href="../index.html">
                         <span class="normal_nav_link">Home</span>
                     </a>
+
                 </div>
 
                 <div class="product_services_link" onclick="open_product_Service_bar()">
 
-                    <span class="normal_nav_link nav_link_active">Products & Services</span>
+                    <span class="normal_nav_link">Products & Services</span>
+
                     <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1L7 7L1 1" stroke="white" stroke-width="2" />
                     </svg>
@@ -51,21 +56,27 @@
                 </div>
 
                 <div class="blog_link">
+
                     <a href="./blogs.html">
-                        <span class="normal_nav_link">Blogs</span>
+                        <span class="normal_nav_link nav_link_active">Blogs</span>
                     </a>
+
                 </div>
 
                 <div class="about_link">
+
                     <a href="./aboutUs.html">
                         <span class="normal_nav_link">About us</span>
                     </a>
+
                 </div>
 
                 <div class="contact_us_link">
+
                     <a href="./contact.html">
                         <span class="normal_nav_link">Contact Us</span>
                     </a>
+
                 </div>
 
             </div>
@@ -73,10 +84,12 @@
             <div class="side_bar_links">
 
                 <button onclick="open_close_side_bar('open')">
+
                     <svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 7H19M1 1H19M1 13H19" stroke="white" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
+
                 </button>
 
                 <div class="side_bar_content_wrapper" id="side_bar_content_wrapper">
@@ -90,6 +103,7 @@
                             <div class="side_bar_close_button">
 
                                 <button onclick="open_close_side_bar('close')">
+
                                     <svg viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_224_50436)">
                                             <path
@@ -102,6 +116,7 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
+
                                 </button>
 
                             </div>
@@ -197,11 +212,11 @@
                         <div class="product_box_heading"><a href="./security-products.html">Security Products</a></div>
 
                         <div class="product_box_link">
-                            <a href="./security-products.html#WAFER_CHIP_1">WAFER Chip 1.0</a>
-                            <a href="./security-products.html#WAFER_CHIP_2">WAFER Nova 2.0</a>
-                            <a href="./security-products.html#WAFER_CHIP_3">WAFER Nova 2.2.x</a>
-                            <a href="./security-products.html#WAFER_CHIP_4">WAFER Supernova 3.0</a>
-                            <a href="./security-products.html#WAFER_CHIP_5">WAFER Probe</a>
+                            <a href="#WAFER_CHIP_1">WAFER Chip 1.0</a>
+                            <a href="#WAFER_CHIP_2">WAFER Nova 2.1</a>
+                            <a href="#WAFER_CHIP_3">WAFER Nova 2.2.x</a>
+                            <a href="#WAFER_CHIP_4">WAFER Supernova 3.0</a>
+                            <a href="#WAFER_CHIP_5">WAFER Probe</a>
                         </div>
 
                     </div>
@@ -226,8 +241,12 @@
                     <!-- A.R.T Services -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="./art-services.html">A.R.T Services for University
-                                Collaboration</a>
+                        <div class="product_box_heading">
+
+                            <a href="./art-services.html">
+                                A.R.T Services for University Collaboration
+                            </a>
+
                         </div>
 
                         <div class="product_box_link">
@@ -240,8 +259,12 @@
                     <!-- Research & Development -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="./research-dev.html">Research & Development
-                                Services</a></div>
+                        <div class="product_box_heading">
+                            <a href="./research-dev.html">
+                                Research & Development Services
+                            </a>
+                        </div>
+
                         <div class="product_box_link">
                             <a href="./research-dev.html">Download WAFER Web-Resources</a>
                         </div>
@@ -252,7 +275,8 @@
                     <!--WAFER Registration Portal -->
                     <div class="products_box">
 
-                        <div class="product_box_heading"><a href="./wafer-device.html">WAFER Registration Portal</a>
+                        <div class="product_box_heading">
+                            <a href="./wafer-device.html">WAFER Registration Portal</a>
                         </div>
                         <div class="product_box_link">
                             <a href="./wafer-device.html">Registration Form</a>
@@ -266,54 +290,63 @@
 
             </div>
 
-            <div class="product_nav">
-
-                <div class="product_nav_links">
-                    <a href="./security-products.html">Security Products & Tools</a>
-                    <a href="./investigation.html">Investigation Solutions & Forensic Services</a>
-                    <a href="./art-services.html">A.R.T Services for University
-                        Collaboration</a>
-                    <a href="./research-dev.html" class="nav_link_active">Research and Development Services</a>
-                    <a href="./wafer-device.html">WAFER Device Registration</a>
-                </div>
-
-            </div>
-
         </div>
         <!-- navigation code -->
 
-        <!-- product elements -->
-        <div class="product_Elements_container">
+        <div class="blogs_wraper extra_styling">
 
-            <div class="research_dev_content_container">
+            <div class="blogs_container_wrapper">
 
-                <div class="research_dev_content_wrapper">
+                <div class="single_blog_iamge">
 
-                    <div class="research_data_container">
+                    <div class="blog_image" id="blog_image"></div>
 
-                        <div class="research_heading">
-                            Research and Development Services
+                    <div class="Single_blog_heading" id="Single_blog_heading"></div>
+
+                </div>
+
+                <div class="blogs_container" style="padding: 50px 0;">
+
+                    <div class="left_side_pannel">
+
+                        <div class="category_buttons">
+
+                            <a href="./blogs.html">
+
+                                <div class="Tops_Blogs_heading">Categories</div>
+
+                                <div class="category_buttons_list">
+
+                                    <button>Cyber Security</button>
+                                    <div class="white_seprator_line"></div>
+                                    <button>Cryptocurrency</button>
+                                    <div class="white_seprator_line"></div>
+                                    <button>Laws & Legal</button>
+                                    <div class="white_seprator_line"></div>
+                                    <button>Cyber Intelligence</button>
+
+                                </div>
+
+                            </a>
+
                         </div>
 
-                        <div class="research_para">
-                            Research and Development is at the core of WhiteLint. We have a state of the art network
-                            laboratory in-house. We boast of top-of-the-line Servers, GPU Units and Sandboxes allowing
-                            security exercises, testing and reliable prototyping of fresh solutions for any and all
-                            kinds of network security and forensic tasks. We have already successfully prototyped
-                            technologies worth 100 Crores and work on projects for Universities, Ministries, Law
-                            Enforcement Agencies and the Government. Our R&D service is the first-of-its-kind service in
-                            India. They promote the 'Make in India' initiative and provide a platform allowing various
-                            organizations and venture capitalists a chance to invest in innovative solutions.
+                        <div class="tops_Blogs" id="tops_Blogs">
+
+                            <div class="Tops_Blogs_heading">Top&nbsp;Posts</div>
+                            <div class="tops_blogs_list" id="tops_blogs_single_list"></div>
+
                         </div>
 
                     </div>
 
+                    <div class="blog_detail_container" id="blog_detail_container"></div>
+
                 </div>
 
             </div>
 
         </div>
-        <!-- product elements -->
 
         <!-- footer code -->
         <footer>
@@ -443,14 +476,13 @@
                 </div>
             </div>
 
-
         </footer>
         <!-- footer code -->
 
     </main>
 
     <script src="../jsWorkings/index.js"></script>
-    <script src="./jsWorkings/home.js"></script>
+    <script src="../jsWorkings/blogs.js"></script>
 
 </body>
 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./admin_panal/admin_styling.css">
+
+    <link rel="stylesheet" href="./cssStyling/index.css">
+
+    <title>whitelint - login</title>
+</head>
+
+<body>
+
+    <div class="login_box_container" id="login_box_container" style="display: none;">
+
+        <div class="login_box">
+
+            <form id="admin_login">
+
+                <div class="login_form_group">
+                    <input type="text" name="username" placeholder="Username" required />
+                </div>
+
+                <div class="login_form_group">
+                    <input type="password" name="password" placeholder="password" required />
+                </div>
+
+                <div class="login_form_group">
+                    <button id="login_buton">
+                        Login
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- <main id="main_container" style="display: none;"> -->
+    <main id="main_container">
+
+        <div class="admin_body_container">
+
+            <div class="left_navbar">
+
+                <div class="navlinks" id="navlinks">
+
+                    <a class="navlinks_normal admin_link_active" onclick="active_not_avtive(this,'products')">
+                        Products
+                    </a>
+
+                    <a class="navlinks_normal" onclick="active_not_avtive(this,'services')">
+                        Services
+                    </a>
+
+                    <a class="navlinks_normal" onclick="active_not_avtive(this,'user')">
+                        Registered&nbsp;User
+                    </a>
+
+                    <a class="navlinks_normal" onclick="active_not_avtive(this,'blog')">
+                        Blogs
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="right_content" id="right_content">
+
+                <div class="content_container container_active" id="product_container"></div>
+
+                <div class="content_container" id="Services_container"></div>
+
+                <div class="content_container" id="registered_container"></div>
+
+                <div class="content_container" id="blog_container">Blog</div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./admin_panal/admin.js"></script>
+
+    <script>
+
+        var login_box_container = document.getElementById('login_box_container');
+        var main_container = document.getElementById('main_container');
+
+        var admin_login = document.getElementById('admin_login');
+        var login_buton = document.getElementById('login_buton');
+
+        admin_login.addEventListener('submit', function (event) {
+
+            login_buton.innerHTML = `<div class="loader"></div>`;
+
+            event.preventDefault()
+
+            async function postData(url = "", data = {}) {
+                const response = await fetch(url, {
+                    method: "POST",
+                    mode: "cors",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                });
+                return response.json();
+            }
+
+
+            postData("https://website-backend-gamma.vercel.app/login", {
+                username: `${admin_login.elements["username"].value}`,
+                password: `${admin_login.elements["password"].value}`
+            }).then((data) => {
+
+                if (data.message == 'login successfully') {
+
+                    login_box_container.style.display = 'none';
+                    main_container.style.display = 'block';
+
+                    get_corresponding_data()
+
+                }
+                else {
+                    alert('wrong credentials')
+                    login_buton.innerHTML = `Login`;
+                }
+
+            })
+                .catch((err) => { console.log(err) })
+
+            admin_login.reset();
+
+        })
+
+    </script>
+
+</body>
+
+</html>

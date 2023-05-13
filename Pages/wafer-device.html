@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="blog_link">
-                    <a href="#">
+                    <a href="./blogs.html">
                         <span class="normal_nav_link">Blogs</span>
                     </a>
                 </div>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="contact_us_link">
-                    <a href="#">
+                    <a href="./contact.html">
                         <span class="normal_nav_link">Contact Us</span>
                     </a>
                 </div>
@@ -163,19 +163,19 @@
                             </div>
 
                             <div class="blogs">
-                                <a href="#">
+                                <a href="./blogs.html">
                                     <span>Blogs</span>
                                 </a>
                             </div>
 
                             <div class="contact_us">
-                                <a href="#">
+                                <a href="./contact.html">
                                     <span>Contact Us</span>
                                 </a>
                             </div>
 
                             <div class="privacy_Plocy">
-                                <a href="#">
+                                <a href="./privacy-policy.html">
                                     <span>Privacy Policy</span>
                                 </a>
                             </div>
@@ -374,7 +374,7 @@
 
                         <div class="form_checkbox">
                             <div class="squaredThree">
-                                <input type="checkbox" value="None" id="check_box" name="check_box" required />
+                                <input type="checkbox" value="None" id="check_box" name="check_box" />
                                 <label for="check_box"></label>
                             </div>
                             <span>You agree to our friendly <a href="#">Privacy Policy.</a></span>
@@ -385,6 +385,12 @@
                         </div>
 
                     </form>
+
+                    <div class="registration_complete" id="registration_complete" style="display: none;">
+                        <img src="https://i.postimg.cc/SxQ29Lrg/Wafer-Confirmation.png" alt="Thanku Image" />
+                        <p>Registration Completed Successfully</p>
+                        <a href="../index.html">Back to Home Page</a>
+                    </div>
 
                 </div>
 
@@ -404,8 +410,9 @@
                     <div class="footer_links_container">
                         <a href="../index.html">Home</a>
                         <a href="./aboutUs.html">About Us</a>
-                        <a href="#">Blogs</a>
-                        <a href="#">Contact us</a>
+                        <a href="./blogs.html">Blogs</a>
+                        <a href="./contact.html">Contact us</a>
+                        <a href="./privacy-policy.html">Privacy Policy</a>
                     </div>
 
                 </div>
@@ -528,6 +535,7 @@
     <script>
 
         var wafer_registration_Form = document.getElementById('wafer_registration_Form');
+        var registration_complete = document.getElementById('registration_complete');
 
         wafer_registration_Form.addEventListener('submit', function (event) {
 
@@ -556,9 +564,9 @@
                 city: `${wafer_registration_Form.elements["city"].value}`,
                 country: `${wafer_registration_Form.elements["country"].value}`
             }).then((data) => {
-                console.log(data);
+                wafer_registration_Form.style.display = 'none';
+                registration_complete.style.display = 'block';
             });
-
 
         })
     </script>
