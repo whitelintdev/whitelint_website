@@ -37,11 +37,11 @@ function active_not_avtive(field, what) {
 ===================================================================== */
 
 
-get_corresponding_data()
 function get_corresponding_data() {
     getproduct_data()
     getservices_data()
     getuser_data()
+    getBlogs_data()
 }
 
 
@@ -131,9 +131,9 @@ function show_products_data(data) {
 
 }
 
-function Delete_product(id){
+function Delete_product(id) {
     async function logJSONData() {
-        const response = await fetch(`https://website-backend-gamma.vercel.app/security/${id}`,{method:'DELETE'});
+        const response = await fetch(`https://website-backend-gamma.vercel.app/security/${id}`, { method: 'DELETE' });
         const jsonData = await response.json();
         console.log(jsonData);
         getproduct_data();
@@ -219,9 +219,9 @@ function show_Services_data(data) {
 
 }
 
-function Delete_Services(id){
+function Delete_Services(id) {
     async function logJSONData() {
-        const response = await fetch(`https://website-backend-gamma.vercel.app/investigation/${id}`,{method:'DELETE'});
+        const response = await fetch(`https://website-backend-gamma.vercel.app/investigation/${id}`, { method: 'DELETE' });
         const jsonData = await response.json();
         console.log(jsonData);
         getservices_data();
@@ -302,9 +302,9 @@ function show_user(data) {
 
 }
 
-function Delete_User(id){
+function Delete_User(id) {
     async function logJSONData() {
-        const response = await fetch(`https://website-backend-gamma.vercel.app/user/${id}`,{method:'DELETE'});
+        const response = await fetch(`https://website-backend-gamma.vercel.app/user/${id}`, { method: 'DELETE' });
         const jsonData = await response.json();
         console.log(jsonData);
         getuser_data();
@@ -324,6 +324,54 @@ function Delete_User(id){
                             Blogs Page
 ===================================================================== */
 function getBlogs_data() {
+    async function logJSONData() {
+        const response = await fetch("https://website-backend-gamma.vercel.app/blogs");
+        const jsonData = await response.json();
+        show_blogs(jsonData);
+    }
+
+    logJSONData()
+}
+var blog_container = document.getElementById('blog_container');
+function show_blogs(data) {
+    let blog_box = ''
+
+    data.forEach((element) => {
+
+        blog_box +=
+            `
+            <div class="admin_blog_box">
+
+                <div class="blog_detail_Container">
+
+                    <div class="blog_image_container">
+                        <img src="${element.Image}" alt="" />
+                    </div>
+
+                    <div class="blog_detail">
+
+                        <div class="blog_heading">${element.Heading}</div>
+
+                        <div class="blog_category">
+                            <b>Category</b> - ${element.category}
+                        </div>
+
+                        <div class="blog_byline">${element.Byline}</div>
+
+                    </div>
+
+                </div>
+
+                <div class="blog_para_detail">${element.Paragraph}</div>
+
+            </div>
+        `
+    })
+
+    blog_container.innerHTML = blog_box;
+}
+
+function delete_blogs() {
 
 }
 /* ==================================================================-
