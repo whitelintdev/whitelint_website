@@ -28,9 +28,11 @@ function display_Product_data(data) {
             list += ` <li>${element}</li>`
         });
 
+        let product_id = data[index].product_name.replaceAll(" ", "_");
+
         product_list += `
 
-            <div class="varient_box" id="${data[index].product_name}">
+            <div class="varient_box" id="${product_id}">
 
                 <div class="varient_box_detail">
 
@@ -44,12 +46,14 @@ function display_Product_data(data) {
                             ${list}
                         </ul>
 
-                        <div class="variant_box_para">
-                            Quantity Based Pricing Range:
-                            <span>
-                                ${data[index].product_Price}         
-                            </span>
-                        </div>
+                        ${data[index].product_Price == '' ? `` :
+                `<div class="variant_box_para">
+                                        Quantity Based Pricing Range:
+                                        <span>
+                                            ${data[index].product_Price}         
+                                        </span>
+                                    </div>`
+            }
 
                     </div>
 
@@ -102,8 +106,7 @@ function display_Product_services(data) {
     start_display()
     function start_display() {
 
-        console.log(data[index])
-
+        let product_id = data[index].product_name.replaceAll(" ", "_");
 
         product_list +=
             `
@@ -111,7 +114,7 @@ function display_Product_services(data) {
 
                 <div class="varient_box_detail">
 
-                    <div class="variant_box_heading">${data[index].product_name}</div>
+                    <div class="variant_box_heading">${product_id}</div>
 
                     <div class="variant_box_para">${data[index].product_byLine}</div>
 
