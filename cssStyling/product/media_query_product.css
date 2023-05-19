@@ -3,12 +3,14 @@
         font-size: 15px;
     }
 }
+
 @media only screen and (max-width: 1100px) {
     .product_category_continer{
         background-size: cover;
         background-position: left;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     .product_nav{
         display: none;
@@ -105,6 +107,23 @@
     }
     .research_data_container{
         padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .download_content_container{
+        flex-direction: column;
+    }
+
+    .download_text{
+        font-size: 20px;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .download_content_container a{
+        padding: 10px 0;
+        margin: 10px 0;
     }
 }
 
