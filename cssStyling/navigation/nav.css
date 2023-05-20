@@ -17,11 +17,13 @@
 }
 
 
-
 .company_logo a{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+}
+.company_logo img{
+    width: 60%;
 }
 
 
