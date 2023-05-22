@@ -76,10 +76,11 @@
 
 
 .product_category_byline{
-    color: #FF5411;
+    color: #FE9531;
     font-size: 20px;
     font-weight: 800;
-    margin: 20px 0;
+    letter-spacing: 1.5px;
+    margin: 10px 0;
 }
 
 .product_category_heading{
@@ -106,6 +107,19 @@
     font-family: nunito_light !important;
 }
 
+.product_category_extra{
+    opacity: 0.8;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+.product_category_extra span{
+    color: #4BC8FE;
+    font-weight: 600;
+    padding-right: 5px;
+    font-size: 25px !important;
+}
 
 
 
