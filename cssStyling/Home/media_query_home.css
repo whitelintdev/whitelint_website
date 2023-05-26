@@ -199,6 +199,30 @@
         height: 10px;
     }
 
+
+
+
+
+
+
+
+    .comparison_chart_wrapper{
+        width: 100%;
+        background-color: #05172B;
+        padding: 40px 30px 0 30px; 
+        color: white;
+    }
+    
+    .comparison_chart_heading{
+        font-size: 30px;
+    }
+    
+    .comparison_chart_para{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -312,6 +336,17 @@
         height: 200px;
         object-fit: contain;
         width: auto;
+    }
+
+
+
+
+    .comparison_chart_heading{
+        font-size: 24px;
+    }
+    .comparison_chart_para{
+        padding: 20px 0;
+        font-size: 13px;
     }
 
 }
