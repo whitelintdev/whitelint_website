@@ -209,7 +209,7 @@
     .comparison_chart_wrapper{
         width: 100%;
         background-color: #05172B;
-        padding: 40px 30px 0 30px; 
+        padding: 40px 30px 20px 30px; 
         color: white;
     }
     
@@ -291,6 +291,7 @@
     }
 
 
+    
     .product_link {
         padding: 30px;
     }
@@ -300,13 +301,13 @@
     }
 
     .product_link:before {
-        border-top: 40px solid #05172B;
+        border-top: 40px solid transparent;
         border-left: 40px solid transparent;
     }
 
     .product_link:after {
         border-top: 40px solid transparent;
-        border-left: 40px solid #05172B;
+        border-left: 40px solid transparent;
     }
 
     .product_service_heading span {
@@ -326,7 +327,9 @@
     }
 
 
-
+    .video_carousal_container{
+        padding: 30px 30px 50px 30px;
+    }
     .video_box_image_contaienr {
         display: flex;
         justify-content: center;

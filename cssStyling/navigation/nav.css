@@ -69,6 +69,7 @@
     display: flex;
     width: max-content;
     position: relative;
+    cursor: pointer;
 }
 .product_services_link span{
     margin: 0 10px 0 0;

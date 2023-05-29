@@ -21,8 +21,6 @@
 
 .home_hero_image_heading {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     font-size: 55px;
     text-align: center;
 }
@@ -34,6 +32,7 @@
 
 .Unique_Solutions_text {
     font-weight: bolder;
+    display: inline;
 }
 
 
@@ -152,8 +151,8 @@
 
 .comparison_chart_wrapper{
     width: 100%;
-    background-color: #05172B;
-    padding: 100px 30px 0 30px; 
+    background-image: linear-gradient(#05172B, #031F3D);
+    padding: 100px 30px 100px 30px; 
     color: white;
 }
 
@@ -200,9 +199,13 @@
 
 .products_services_container {
     width: 100%;
-    padding: 150px 30px 150px 30px;
+    padding: 140px 30px;
     position: relative;
-    background-color: #05172B;
+    /* background-color: #031F3D; */
+    background-image: linear-gradient(#031F3D, #00264F);
+
+    border-top: 1px solid #05172B;
+    border-bottom: 1px solid #05172B;
 
     display: flex;
     justify-content: center;
@@ -242,7 +245,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    border-top: 60px solid #05172B;
+    border-top: 60px solid #022040;
     border-left: 60px solid transparent;
     width: 0;
 }
@@ -253,7 +256,7 @@
     bottom: 0;
     left: 0;
     border-top: 60px solid transparent;
-    border-left: 60px solid #05172B;
+    border-left: 60px solid #01254C;
     width: 0;
 }
 
@@ -337,28 +340,11 @@
 
 
 
-
-
-.graph_Competition_container {
-    width: 100%;
-    padding: 100px 0;
-    text-align: center;
-    background-color: #031F3D;
-}
-
-.graph_Competition_container img {
-    width: 70%;
-}
-
-
-
-
-
-
 .video_carousal_container {
     width: 100%;
-    padding: 150px 30px;
-    background-color: #00264F;
+    padding: 100px 30px;
+    /* background-color: #00264F; */
+    background-image: linear-gradient(#00264F, #05172B);
 }
 
 .Video_heading {

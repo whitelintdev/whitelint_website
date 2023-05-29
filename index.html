@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./cssStyling/footer/footer.css">
     <link rel="stylesheet" href="./cssStyling/footer/media_query_footer.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+
     <title>Whitelint - Home</title>
 </head>
 
@@ -280,8 +284,10 @@
                 <div class="home_hero_image_content">
 
                     <div class="home_hero_image_heading">
-                        <span class="we_deliver_text">We Deliver</span>
-                        <span class="Unique_Solutions_text">Unique Solutions</span>
+                        <p class="we_deliver_text">We Deliver</p>
+                        <p>
+                            <span class="Unique_Solutions_text"></span>
+                        </p>
                     </div>
                     <div class="home_hero_image_para">
                         <b>WhiteLint Global</b> is an Indo-American startup focused on providing
@@ -711,6 +717,15 @@
 
     <script src="./jsWorkings/index.js"></script>
     <script src="./jsWorkings/home.js"></script>
+
+    <script>
+        var typing = new Typed(".Unique_Solutions_text", {
+            strings: ["", "Unique Solutions", "Other Solution", "That Solutions", "Those Solutions", "These Solutions"],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true,
+        });
+    </script>
 
     <script>
 
