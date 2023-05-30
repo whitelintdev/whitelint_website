@@ -617,13 +617,17 @@
                         </div>
                         <!-- City Name And Counrty Name -->
 
-                        <div class="form_checkbox">
+                        <div class="form_checkbox" id="privacy_policy_wafer">
+
                             <div class="squaredThree">
                                 <input type="checkbox" value="None" id="check_box" name="check_box" />
                                 <label for="check_box"></label>
                             </div>
-                            <span>I agree to all terms & condition stated in the <a href="#">Privacy
-                                    Policy.</a></span>
+                            <span>
+                                I agree to all terms & condition stated in the
+                                <a href="#">PrivacyPolicy.</a>
+                            </span>
+
                         </div>
 
                         <div class="form_button"><button>Submit</button>
@@ -812,37 +816,49 @@
 
         var wafer_registration_Form = document.getElementById('wafer_registration_Form');
         var registration_complete = document.getElementById('registration_complete');
+        var privacy_policy_wafer = document.getElementById('privacy_policy_wafer');
 
         wafer_registration_Form.addEventListener('submit', function (event) {
 
             event.preventDefault()
 
-            async function postData(url = "", data = {}) {
-                const response = await fetch(url, {
-                    method: "POST",
-                    mode: "cors",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                });
-                return response.json();
+            if (privacy_policy_wafer.classList.contains('bumb_animation')) {
+
             }
 
-            postData("https://website-backend-gamma.vercel.app/user", {
-                firstName: `${wafer_registration_Form.elements["first_name"].value}`,
-                lastName: `${wafer_registration_Form.elements["last_name"].value}`,
-                email: `${wafer_registration_Form.elements["email_address"].value}`,
-                contactNo: `${wafer_registration_Form.elements["contact_number"].value}`,
-                industry: `${wafer_registration_Form.elements["Industry"].value}`,
-                modelName: `${wafer_registration_Form.elements["model_name"].value}`,
-                modelSerialNo: `${wafer_registration_Form.elements["serial_number"].value}`,
-                city: `${wafer_registration_Form.elements["city"].value}`,
-                country: `${wafer_registration_Form.elements["country"].value}`
-            }).then((data) => {
-                wafer_registration_Form.style.display = 'none';
-                registration_complete.style.display = 'block';
-            });
+            if (document.getElementById('check_box').checked) {
+                async function postData(url = "", data = {}) {
+                    const response = await fetch(url, {
+                        method: "POST",
+                        mode: "cors",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(data),
+                    });
+                    return response.json();
+                }
+
+                postData("https://website-backend-gamma.vercel.app/user", {
+                    firstName: `${wafer_registration_Form.elements["first_name"].value}`,
+                    lastName: `${wafer_registration_Form.elements["last_name"].value}`,
+                    email: `${wafer_registration_Form.elements["email_address"].value}`,
+                    contactNo: `${wafer_registration_Form.elements["contact_number"].value}`,
+                    industry: `${wafer_registration_Form.elements["Industry"].value}`,
+                    modelName: `${wafer_registration_Form.elements["model_name"].value}`,
+                    modelSerialNo: `${wafer_registration_Form.elements["serial_number"].value}`,
+                    city: `${wafer_registration_Form.elements["city"].value}`,
+                    country: `${wafer_registration_Form.elements["country"].value}`
+                }).then((data) => {
+                    wafer_registration_Form.style.display = 'none';
+                    registration_complete.style.display = 'block';
+                });
+            } else {
+                privacy_policy_wafer.classList.add("bumb_animation");
+                setTimeout(() => {
+                    privacy_policy_wafer.classList.remove('bumb_animation')
+                }, 500);
+            }
 
         })
     </script>
@@ -851,10 +867,9 @@
 
     <script>
 
-        document.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-        }
-        );
+        // document.addEventListener('contextmenu', (e) => {
+        //     e.preventDefault();
+        // });
         document.onkeydown = function (e) {
             if (event.keyCode == 123) {
                 return false;
