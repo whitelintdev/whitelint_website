@@ -106,15 +106,13 @@ function display_Product_services(data) {
     start_display()
     function start_display() {
 
-        let product_id = data[index].product_name.replaceAll(" ", "_");
-
         product_list +=
             `
             <div class="varient_box" id="investigation1">
 
                 <div class="varient_box_detail">
 
-                    <div class="variant_box_heading">${product_id}</div>
+                    <div class="variant_box_heading">${data[index].product_name}</div>
 
                     <div class="variant_box_para">${data[index].product_byLine}</div>
 
